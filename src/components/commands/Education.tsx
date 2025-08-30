@@ -2,28 +2,24 @@ import React from 'react';
 
 const education = [
   {
-    title: "Full Stack Open",
-    desc: "Helsinski University | 2024 ~",
+    title: "🎓 Education",
+    desc: "Junior at Sookmyung Women's University",
   },
   {
-    title: "Full Stack Web Developer",
-    desc: "FreeCodeCamp | 2023 - 2024",
+    title: "💻 Major",
+    desc: "Data Science & Big Data Engineering in Department of Software",
   },
   {
-    title: "Data Science",
-    desc: "SoyHenry | 2023",
+    title: "🔐 CLUB Activities",
+    desc: "Web Hacking Academic Director · Member @ SISS (Sookmyung Information Security Study) | 2023~\nAI Research Memeber @ BOAZ (https://www.bigdataboaz.com/)",
   },
   {
-    title: "Data Engineer",
-    desc: "IBM | 2023",
+    title: "💡 Interests",
+    desc: "Anomaly Detection, AI-driven Security, Data Mining, Data Engineering",
   },
   {
-    title: "EF Set",
-    desc: "C2 Proficient | 2024",
-  },
-  {
-    title: "IELTS",
-    desc: "C2 Proficient | 2022",
+    title: "🏫 Currently in SNSec. Lab @ SMWU",
+    desc: "I'm working as an undergraduate research intern at the System Network Security Lab, focusing on real-time anomaly detection in automotive Ethernet traffic using unsupervised deep learning. > Advisor: Prof. Seonghoon Jeong",
   },
 ];
 

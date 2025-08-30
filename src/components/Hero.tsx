@@ -10,13 +10,13 @@ const Hero: React.FC<HeroProps> = ({ showPrompt = true }) => {
     <div className='hero'>
       {showPrompt && (
         <>
-          <span className="prompt">guest</span>@<span className="ssanjua-prompt">ssanjua</span><span className="end-prompt">:~$</span>
+          <span className="prompt">guest</span>@<span className="ssanjua-prompt">sallysooo</span><span className="end-prompt">:~$</span>
           <span>welcome to my terminal portfolio</span>
         </>
       )}
       <div>
-        <p>hi! my name is Paula, also know as</p>
-        <h1 className="terminal-title">SSANJUA</h1>
+        <p>hi! my name is Jisoo Kim, also know as</p>
+        <h1 className="terminal-title">SALLYSOOO</h1>
       </div>
       <div className="ascii-art">
 

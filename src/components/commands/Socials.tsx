@@ -2,44 +2,30 @@ const socials = [
   {
     id: 1,
     title: "GitHub",
-    url: "https://github.com/ssanjua",
-    username: "github.com/ssanjua",
+    url: "https://github.com/sallysooo",
+    username: "github.com/sallysooo",
     tab: 6
   },
   {
     id: 2,
     title: "Linkedin",
-    url: "https://www.linkedin.com/in/paupallares",
-    username: "@paupallares",
+    url: "https://www.linkedin.com/in/jisoo-kim-66619b2bb/",
+    username: "@jisoo-kim",
     tab: 4
-  },
-  {
-    id: 3,
-    title: "Twitch",
-    url: "https://twitch.tv/ssanjuaa",
-    username: "tv/ssanjuaa",
-    tab: 6
   },
   {
     id: 4,
     title: "Instagram",
-    url: "https://instagram.com/ppupipallares",
-    username: "@ppupipallares",
+    url: "https://instagram.com/sallysooo",
+    username: "@sallysooo",
     tab: 3
   },
   {
     id: 5,
-    title: "X",
-    url: "https://x.com/pupipallares",
-    username: "@pupipallares",
-    tab: 11
-  },
-  {
-    id: 6,
-    title: "Hack the box",
-    url: "https://app.hackthebox.com/users/1952862",
-    username: "@ssanjua",
-    tab: 0
+    title: "Blog",
+    url: "https://sallysooo.tistory.com/",
+    username: "@여백::",
+    tab: 8
   },
 ]
 
