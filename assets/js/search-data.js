@@ -501,7 +501,7 @@ ninja.data = [{
         title: 'CV',
         section: 'Socials',
         handler: () => {
-          window.open("/assets/pdf/example_pdf.pdf", "_blank");
+          window.open("/assets/pdf/jisoo_kim.pdf", "_blank");
         },
       },{
         id: 'social-email',
@@ -518,25 +518,11 @@ ninja.data = [{
           window.open("https://github.com/sallysooo", "_blank");
         },
       },{
-        id: 'social-inspire',
-        title: 'Inspire HEP',
+        id: 'social-linkedin',
+        title: 'LinkedIn',
         section: 'Socials',
         handler: () => {
-          window.open("https://inspirehep.net/authors/1010907", "_blank");
-        },
-      },{
-        id: 'social-rss',
-        title: 'RSS Feed',
-        section: 'Socials',
-        handler: () => {
-          window.open("/feed.xml", "_blank");
-        },
-      },{
-        id: 'social-scholar',
-        title: 'Google Scholar',
-        section: 'Socials',
-        handler: () => {
-          window.open("https://scholar.google.com/citations?user=qc6CJjYAAAAJ", "_blank");
+          window.open("https://www.linkedin.com/in/jisoo-kim-66619b2bb", "_blank");
         },
       },{
         id: 'social-custom_social',
