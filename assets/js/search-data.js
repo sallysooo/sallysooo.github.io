@@ -25,7 +25,7 @@ ninja.data = [{
           },
         },{id: "nav-projects",
           title: "projects",
-          description: "A growing collection of your cool projects.",
+          description: "A growing collection of my academic projects.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/projects/";
@@ -518,6 +518,13 @@ ninja.data = [{
           window.open("https://github.com/sallysooo", "_blank");
         },
       },{
+        id: 'social-instagram',
+        title: 'Instagram',
+        section: 'Socials',
+        handler: () => {
+          window.open("https://instagram.com/sallysooo", "_blank");
+        },
+      },{
         id: 'social-linkedin',
         title: 'LinkedIn',
         section: 'Socials',
@@ -529,7 +536,7 @@ ninja.data = [{
         title: 'Custom_social',
         section: 'Socials',
         handler: () => {
-          window.open("https://www.alberteinstein.com/", "_blank");
+          window.open("https://sallysooo.tistory.com/", "_blank");
         },
       },{
       id: 'light-theme',
