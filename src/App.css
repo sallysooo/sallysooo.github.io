@@ -76,6 +76,15 @@
   border-color: color-mix(in srgb, var(--accent) 45%, var(--border));
 }
 
+.tile--interactive:focus {
+  outline: none;
+}
+
+.tile--interactive:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
 .tile--accent {
   background: var(--gradient);
   border-color: transparent;

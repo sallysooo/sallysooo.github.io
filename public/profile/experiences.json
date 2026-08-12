@@ -8,7 +8,13 @@
             "dateText": "Since Jul 2025",
             "subActivities": [
                 {
-                    "title": "[ADV-project] HEART: Harm Estimation and Ranking of Traffic for Cache-Hit-Ratio Recovery in E-Commerce Logs"
+                    "title": "[ADV-project] HEART: Harm Estimation and Ranking of Traffic for Cache-Hit-Ratio Recovery in E-Commerce Logs",
+                    "images": [
+                        "images/experience/boaz_conference.jpg",
+                        "images/experience/boaz_conference_1.jpg",
+                        "images/experience/boaz_conference_2.jpg",
+                        "images/experience/boaz_conference_3.jpg"
+                    ]
                 },
                 {
                     "title": "[Mini-project 2] LLM-Based OOD Detection in Sentiment Classification"
@@ -30,6 +36,10 @@
                     "description": [
                         "Working on real-time anomaly detection in automotive Ethernet traffic (IVN) using various deep learning techniques.",
                         "Advisor: Prof. Seonghoon Jeong."
+                    ],
+                    "images": [
+                        "images/experience/snsec_lab_1.jpg",
+                        "images/experience/snsec_lab_2.jpg"
                     ]
                 }
             ]

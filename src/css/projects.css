@@ -8,6 +8,19 @@
   padding: var(--space-5);
   text-align: left;
   height: 100%;
+  cursor: pointer;
+}
+
+.projects-filter {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+  margin-bottom: var(--space-6);
+}
+
+.projects-filter .btn-pill {
+  font-size: 0.85rem;
+  padding: 0.5em 1.2em;
 }
 
 .project-card__media {

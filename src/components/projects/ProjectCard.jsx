@@ -2,14 +2,25 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import ReactMarkdown from 'react-markdown';
 
-const ProjectCard = ({ project, featured = false }) => {
+const ProjectCard = ({ project, featured = false, onOpen }) => {
   const parseBodyText = (text) => <ReactMarkdown>{text}</ReactMarkdown>;
+
+  const handleKeyDown = (e) => {
+    if (e.key === 'Enter' || e.key === ' ') {
+      e.preventDefault();
+      onOpen(project);
+    }
+  };
 
   return (
     <article
       className={`tile tile--interactive project-card ${
         featured ? 'span-4 project-card--featured' : 'span-2'
       }`}
+      role="button"
+      tabIndex={0}
+      onClick={() => onOpen(project)}
+      onKeyDown={handleKeyDown}
     >
       {project?.image && (
         <div className="project-card__media">
@@ -32,6 +43,7 @@ const ProjectCard = ({ project, featured = false }) => {
                 href={link.href}
                 target="_blank"
                 rel="noopener noreferrer"
+                onClick={(e) => e.stopPropagation()}
               >
                 {link.text}
                 {' '}
@@ -54,6 +66,7 @@ const ProjectCard = ({ project, featured = false }) => {
 
 ProjectCard.propTypes = {
   featured: PropTypes.bool,
+  onOpen: PropTypes.func.isRequired,
   project: PropTypes.shape({
     title: PropTypes.string.isRequired,
     bodyText: PropTypes.string.isRequired,
