@@ -223,7 +223,16 @@
             "gallery": [
                 "/images/projects/HEART.png"
             ],
-            "links": [],
+            "links": [
+                {
+                    "text": "Poster",
+                    "href": "https://www.slideshare.net/slideshow/24-boaz-heart-harm-estimation-and-ranking-of-traffic-for-cache-hit-ratio-recovery-in-e-commerce-logs/288919503"
+                },
+                {
+                    "text": "Slides",
+                    "href": "https://www.slideshare.net/slideshow/24-boaz-heart-h-arm-e-stimation-a-nd-r-anking-of-t-raffic-for-cache-hit-ratio-recovery-in-e-commerce-logs/288881219"
+                }
+            ],
             "tags": [
                 "Data Mining",
                 "Bot Detection",
