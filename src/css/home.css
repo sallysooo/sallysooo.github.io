@@ -97,6 +97,11 @@
   justify-content: space-between;
   align-items: flex-start;
   min-height: 150px;
+  width: 100%;
+  height: 100%;
+  text-align: left;
+  font: inherit;
+  cursor: pointer;
 }
 
 .monogram-mark {
