@@ -79,7 +79,12 @@ function Experience(props) {
               {data.map((item) => (
                 <div className="tl-item" key={item.title + item.dateText}>
                   <div className="tl-node--dot" />
-                  <div className="tl-card">
+                  <div className={`tl-card${item.orgIcon ? ' tl-card--has-icon' : ''}`}>
+                    {item.orgIcon && (
+                      <div className="tl-card__org-icon">
+                        <img src={item.orgIcon} alt={item.subtitle} />
+                      </div>
+                    )}
                     <div className="tl-date">{item.dateText}</div>
                     <h3 className="tl-title">{item.title}</h3>
                     <div className="tl-subtitle">

@@ -4,6 +4,7 @@
             "title": "25th AI Research Member",
             "subtitle": "BOAZ",
             "link": "https://www.bigdataboaz.com/",
+            "orgIcon": "images/experience/BOAZ_logo.svg",
             "dateText": "Since Jul 2025",
             "subActivities": [
                 {
@@ -21,6 +22,7 @@
             "title": "Undergraduate Research Intern",
             "subtitle": "SNSec Lab (System Network Security Lab), SMWU",
             "link": "https://www.snsec.net/",
+            "orgIcon": "images/experience/sookmyung_logo.svg",
             "dateText": "Since May 2025",
             "subActivities": [
                 {
@@ -36,6 +38,7 @@
             "title": "Web Hacking Academic Director · Member",
             "subtitle": "SISS (Sookmyung Information Security Study)",
             "link": "https://sissofsookmyung.vercel.app/",
+            "orgIcon": "images/experience/siss_logo.png",
             "dateText": "Since 2023",
             "subActivities": [
                 {
@@ -47,8 +50,8 @@
                     ],
                     "images": [
                         "images/experience/27th_hcamp.jpg",
-                        "images/experience/27th_hcamp_1.jpg",
                         "images/experience/28th_hcamp.jpg",
+                        "images/experience/29th_hcamp.png",
                         "images/experience/31st_hcamp.jpg"
                     ]
                 },
