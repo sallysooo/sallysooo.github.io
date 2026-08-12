@@ -1,19 +1,19 @@
 {
     "social": [
         {
-            "network" : "linkedin",
+            "network": "linkedin",
             "href": "https://www.linkedin.com/in/jisoo-kim-66619b2bb"
         },
         {
-            "network" : "github",
+            "network": "github",
             "href": "https://github.com/sallysooo"
         },
         {
-            "network" : "rss",
+            "network": "rss",
             "href": "https://sallysooo.tistory.com/"
         },
         {
-            "network" : "email",
+            "network": "email",
             "href": "mailto:jisugim168@gmail.com"
         }
     ]

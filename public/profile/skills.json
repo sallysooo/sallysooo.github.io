@@ -3,9 +3,9 @@
     "skills": [
         {
             "title": "Main Stacks",
-            "items" : [
+            "items": [
                 {
-                    "icon": "images/skills/python.png",
+                    "icon": "/images/skills/python.png",
                     "title": "Python"
                 },
                 {
@@ -13,7 +13,7 @@
                     "title": "PyTorch"
                 },
                 {
-                    "icon": "images/skills/docker.png",
+                    "icon": "/images/skills/docker.png",
                     "title": "Docker"
                 },
                 {

@@ -3,6 +3,7 @@ import { Routes, Route } from 'react-router-dom';
 import FallbackSpinner from './components/FallbackSpinner';
 import NavBar from './components/NavBar';
 import Home from './components/Home';
+import BlogPost from './components/BlogPost';
 import endpoints from './constants/endpoints';
 
 function MainApp() {
@@ -24,6 +25,7 @@ function MainApp() {
         <Suspense fallback={<FallbackSpinner />}>
           <Routes>
             <Route exact path="/" element={<Home />} />
+            <Route path="/blog/:slug" element={<BlogPost />} />
             {data
               && data.sections.map((route) => {
                 const SectionComponent = React.lazy(() => import(`./components/${route.component}.jsx`));
