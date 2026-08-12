@@ -1,6 +1,7 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import PropTypes from 'prop-types';
 import ReactMarkdown from 'react-markdown';
+import Lightbox from '../Lightbox';
 import '../../css/project-modal.css';
 
 function formatDate(iso) {
@@ -13,6 +14,8 @@ function formatDate(iso) {
 }
 
 function ProjectModal({ project, onClose }) {
+  const [lightboxIndex, setLightboxIndex] = useState(null);
+
   useEffect(() => {
     const previousOverflow = document.body.style.overflow;
     document.body.style.overflow = 'hidden';
@@ -99,15 +102,23 @@ function ProjectModal({ project, onClose }) {
 
           {project?.gallery?.length > 0 && (
             <div className="project-modal__gallery">
-              {project.gallery.map((src) => (
-                <a key={src} href={src} target="_blank" rel="noopener noreferrer">
+              {project.gallery.map((src, i) => (
+                <button key={src} type="button" onClick={() => setLightboxIndex(i)}>
                   <img src={src} alt={project.title} />
-                </a>
+                </button>
               ))}
             </div>
           )}
         </div>
       </div>
+
+      {lightboxIndex !== null && (
+        <Lightbox
+          images={project.gallery}
+          initialIndex={lightboxIndex}
+          onClose={() => setLightboxIndex(null)}
+        />
+      )}
     </div>
   );
 }

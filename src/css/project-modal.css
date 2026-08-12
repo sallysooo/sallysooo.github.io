@@ -116,12 +116,16 @@
   gap: var(--space-3);
 }
 
-.project-modal__gallery a {
+.project-modal__gallery button {
   display: block;
+  width: 100%;
   aspect-ratio: 4 / 3;
   border-radius: var(--radius-sm);
   overflow: hidden;
   border: 1px solid var(--border);
+  padding: 0;
+  background: none;
+  cursor: pointer;
 }
 
 .project-modal__gallery img {
@@ -132,7 +136,7 @@
   transition: transform var(--dur) var(--ease);
 }
 
-.project-modal__gallery a:hover img {
+.project-modal__gallery button:hover img {
   transform: scale(1.06);
 }
 

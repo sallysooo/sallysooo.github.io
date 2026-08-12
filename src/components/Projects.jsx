@@ -32,8 +32,18 @@ const Projects = (props) => {
 
   const filteredProjects = useMemo(() => {
     if (!data?.projects) return [];
-    if (activeCategory === 'All') return data.projects;
-    return data.projects.filter((p) => p.category === activeCategory);
+
+    const byRecency = (a, b) => (b.dateRange?.end || '').localeCompare(a.dateRange?.end || '');
+
+    if (activeCategory !== 'All') {
+      return data.projects
+        .filter((p) => p.category === activeCategory)
+        .sort(byRecency);
+    }
+
+    const pinned = data.projects.filter((p) => p.pinned);
+    const rest = data.projects.filter((p) => !p.pinned).sort(byRecency);
+    return [...pinned, ...rest];
   }, [data, activeCategory]);
 
   const numberOfItems = showMore ? filteredProjects.length : 6;

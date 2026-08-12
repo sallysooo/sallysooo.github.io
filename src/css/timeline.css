@@ -192,7 +192,7 @@
   gap: var(--space-2);
 }
 
-.tl-subitem__gallery a {
+.tl-subitem__gallery button {
   display: block;
   width: 84px;
   height: 84px;
@@ -200,6 +200,9 @@
   overflow: hidden;
   border: 1px solid var(--border);
   flex-shrink: 0;
+  padding: 0;
+  background: none;
+  cursor: pointer;
 }
 
 .tl-subitem__gallery img {
@@ -210,7 +213,7 @@
   transition: transform var(--dur) var(--ease);
 }
 
-.tl-subitem__gallery a:hover img {
+.tl-subitem__gallery button:hover img {
   transform: scale(1.08);
 }
 

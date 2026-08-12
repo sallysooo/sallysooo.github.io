@@ -4,6 +4,7 @@ import PropTypes from 'prop-types';
 import { Fade } from 'react-awesome-reveal';
 import { ThemeContext } from 'styled-components';
 import Header from './Header';
+import Lightbox from './Lightbox';
 import endpoints from '../constants/endpoints';
 import FallbackSpinner from './FallbackSpinner';
 import '../css/timeline.css';
@@ -16,6 +17,8 @@ function orgIconFor(item, isDark) {
 }
 
 function SubActivity({ activity }) {
+  const [lightboxIndex, setLightboxIndex] = useState(null);
+
   return (
     <div className="tl-subitem">
       <div className="tl-subitem__title">
@@ -32,12 +35,19 @@ function SubActivity({ activity }) {
       )}
       {activity.images?.length > 0 && (
         <div className="tl-subitem__gallery">
-          {activity.images.map((src) => (
-            <a key={src} href={src} target="_blank" rel="noopener noreferrer">
+          {activity.images.map((src, i) => (
+            <button key={src} type="button" onClick={() => setLightboxIndex(i)}>
               <img src={src} alt={activity.title} />
-            </a>
+            </button>
           ))}
         </div>
+      )}
+      {lightboxIndex !== null && (
+        <Lightbox
+          images={activity.images}
+          initialIndex={lightboxIndex}
+          onClose={() => setLightboxIndex(null)}
+        />
       )}
       {activity.description?.length > 0 && (
         <ul className="tl-list">
