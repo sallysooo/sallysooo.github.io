@@ -93,7 +93,11 @@ function Experience(props) {
                     <div className={`tl-card${orgIconSrc ? ' tl-card--has-icon' : ''}`}>
                       {orgIconSrc && (
                       <div className="tl-card__org-icon">
-                        <img src={orgIconSrc} alt={item.subtitle} />
+                        <img
+                          src={orgIconSrc}
+                          alt={item.subtitle}
+                          style={item.orgIconHeight ? { height: item.orgIconHeight } : undefined}
+                        />
                       </div>
                       )}
                       <div className="tl-date">{item.dateText}</div>

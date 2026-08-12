@@ -29,6 +29,7 @@
             "subtitle": "SNSec Lab (System Network Security Lab), SMWU",
             "link": "https://www.snsec.net/",
             "orgIcon": "/images/experience/sookmyung_logo.svg",
+            "orgIconHeight": 60,
             "dateText": "Since May 2025",
             "subActivities": [
                 {
@@ -50,6 +51,7 @@
             "link": "https://sissofsookmyung.vercel.app/",
             "orgIconLight": "/images/experience/siss_logo_light.png",
             "orgIconDark": "/images/experience/siss_logo_dark.png",
+            "orgIconHeight": 44,
             "dateText": "Since 2023",
             "subActivities": [
                 {

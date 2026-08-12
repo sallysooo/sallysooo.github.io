@@ -32,3 +32,116 @@
   object-fit: cover;
   display: block;
 }
+
+/* Sections stacked below the bio (Skills, Education) ----------------------- */
+.about-section-tile {
+  margin-top: var(--space-6);
+  text-align: left;
+}
+
+.about-section {
+  margin-top: var(--space-6);
+}
+
+.about-section-title {
+  font-family: var(--font-display);
+  font-size: 1.4rem;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  margin: 0 0 var(--space-4);
+}
+
+.about-section-intro {
+  color: var(--text-muted);
+  margin-bottom: var(--space-5);
+}
+
+.about-section-intro p {
+  margin: 0;
+  font-size: 1.05rem;
+  line-height: 1.6;
+}
+
+.skills-columns {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-7);
+}
+
+.skills-column {
+  flex: 1 1 220px;
+}
+
+.skill-row {
+  margin-bottom: var(--space-6);
+}
+
+.skill-row:last-child {
+  margin-bottom: 0;
+}
+
+.skill-category-title {
+  font-family: var(--font-display);
+  font-size: 1.05rem;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  margin: 0 0 var(--space-4);
+  color: var(--text-muted);
+}
+
+.skill-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-6) var(--space-5);
+}
+
+.skill-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-2);
+  width: 64px;
+}
+
+.skill-item img {
+  height: 44px;
+  width: 44px;
+  object-fit: contain;
+  transition: transform var(--dur) var(--ease);
+}
+
+.skill-item:hover img {
+  transform: translateY(-4px) scale(1.08);
+}
+
+.skill-item span {
+  font-size: 0.78rem;
+  color: var(--text-muted);
+  text-align: center;
+  line-height: 1.3;
+}
+
+.language-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-6) var(--space-5);
+}
+
+.language-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-3);
+  width: 64px;
+}
+
+.language-flag {
+  font-size: 2rem;
+  line-height: 1.4;
+}
+
+.language-item span:last-child {
+  font-size: 0.78rem;
+  color: var(--text-muted);
+  text-align: center;
+}

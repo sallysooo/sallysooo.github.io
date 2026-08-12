@@ -22,5 +22,10 @@
                 }
             ]
         }
+    ],
+    "languages": [
+        { "flag": "🇰🇷", "label": "Korean" },
+        { "flag": "🇺🇸", "label": "English" },
+        { "flag": "🇨🇳", "label": "Chinese" }
     ]
 }
