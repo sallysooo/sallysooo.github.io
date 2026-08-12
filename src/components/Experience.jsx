@@ -1,11 +1,19 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useContext } from 'react';
 import ReactMarkdown from 'react-markdown';
 import PropTypes from 'prop-types';
 import { Fade } from 'react-awesome-reveal';
+import { ThemeContext } from 'styled-components';
 import Header from './Header';
 import endpoints from '../constants/endpoints';
 import FallbackSpinner from './FallbackSpinner';
 import '../css/timeline.css';
+
+function orgIconFor(item, isDark) {
+  if (item.orgIconDark || item.orgIconLight) {
+    return isDark ? item.orgIconDark : item.orgIconLight;
+  }
+  return item.orgIcon;
+}
 
 function SubActivity({ activity }) {
   return (
@@ -58,6 +66,7 @@ SubActivity.propTypes = {
 
 function Experience(props) {
   const { header } = props;
+  const theme = useContext(ThemeContext);
   const [data, setData] = useState(null);
 
   useEffect(() => {
@@ -76,53 +85,56 @@ function Experience(props) {
         <div className="section-content-container">
           <Fade triggerOnce>
             <div className="tl tl--experience">
-              {data.map((item) => (
-                <div className="tl-item" key={item.title + item.dateText}>
-                  <div className="tl-node--dot" />
-                  <div className={`tl-card${item.orgIcon ? ' tl-card--has-icon' : ''}`}>
-                    {item.orgIcon && (
+              {data.map((item) => {
+                const orgIconSrc = orgIconFor(item, theme.isDark);
+                return (
+                  <div className="tl-item" key={item.title + item.dateText}>
+                    <div className="tl-node--dot" />
+                    <div className={`tl-card${orgIconSrc ? ' tl-card--has-icon' : ''}`}>
+                      {orgIconSrc && (
                       <div className="tl-card__org-icon">
-                        <img src={item.orgIcon} alt={item.subtitle} />
+                        <img src={orgIconSrc} alt={item.subtitle} />
                       </div>
-                    )}
-                    <div className="tl-date">{item.dateText}</div>
-                    <h3 className="tl-title">{item.title}</h3>
-                    <div className="tl-subtitle">
-                      {item.link ? (
-                        <a
-                          className="accent"
-                          href={item.link}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                        >
-                          {item.subtitle}
-                        </a>
-                      ) : (
-                        <span className="accent">{item.subtitle}</span>
                       )}
-                      {item.workType ? ` · ${item.workType}` : ''}
-                    </div>
-
-                    {item.subActivities ? (
-                      <div className="tl-subitems">
-                        {item.subActivities.map((activity) => (
-                          <SubActivity key={activity.title} activity={activity} />
-                        ))}
+                      <div className="tl-date">{item.dateText}</div>
+                      <h3 className="tl-title">{item.title}</h3>
+                      <div className="tl-subtitle">
+                        {item.link ? (
+                          <a
+                            className="accent"
+                            href={item.link}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                          >
+                            {item.subtitle}
+                          </a>
+                        ) : (
+                          <span className="accent">{item.subtitle}</span>
+                        )}
+                        {item.workType ? ` · ${item.workType}` : ''}
                       </div>
-                    ) : (
-                      <ul className="tl-list">
-                        {item.workDescription?.map((point) => (
-                          <li key={point}>
-                            <ReactMarkdown components={{ p: 'span' }}>
-                              {point}
-                            </ReactMarkdown>
-                          </li>
-                        ))}
-                      </ul>
-                    )}
+
+                      {item.subActivities ? (
+                        <div className="tl-subitems">
+                          {item.subActivities.map((activity) => (
+                            <SubActivity key={activity.title} activity={activity} />
+                          ))}
+                        </div>
+                      ) : (
+                        <ul className="tl-list">
+                          {item.workDescription?.map((point) => (
+                            <li key={point}>
+                              <ReactMarkdown components={{ p: 'span' }}>
+                                {point}
+                              </ReactMarkdown>
+                            </li>
+                          ))}
+                        </ul>
+                      )}
+                    </div>
                   </div>
-                </div>
-              ))}
+                );
+              })}
             </div>
           </Fade>
         </div>

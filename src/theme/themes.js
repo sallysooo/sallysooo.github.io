@@ -3,6 +3,7 @@
 // preserved so every component keeps working; values are retuned for the look.
 
 export const lightTheme = {
+  isDark: false,
   background: '#f4f4f6',
   color: '#18181b',
   textMuted: '#52525b',
@@ -34,6 +35,7 @@ export const lightTheme = {
 };
 
 export const darkTheme = {
+  isDark: true,
   background: '#09090b',
   color: '#f4f4f5',
   textMuted: '#a1a1aa',
