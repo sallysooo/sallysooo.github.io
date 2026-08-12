@@ -236,4 +236,19 @@
 
 @media (max-width: 480px) {
   .tl-item { padding-left: 56px; }
+
+  /* The org-icon badge reserves 140px of right-padding for itself on
+     desktop, which is fine when the card is wide but starves the
+     gallery/text of width on a narrow phone screen. Free that space
+     back up by moving the badge into its own strip above the title
+     instead of beside it. */
+  .tl-card--has-icon {
+    padding-right: var(--space-5);
+    padding-top: 64px;
+  }
+
+  .tl-card__org-icon {
+    top: var(--space-3);
+    right: var(--space-4);
+  }
 }
