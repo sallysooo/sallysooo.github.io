@@ -1,0 +1,62 @@
+{
+  "ascii": [
+    "███████╗ █████╗ ██╗     ██╗  ██╗   ██╗███████╗ ██████╗  ██████╗  ██████╗",
+    "██╔════╝██╔══██╗██║     ██║  ╚██╗ ██╔╝██╔════╝██╔═══██╗██╔═══██╗██╔═══██╗",
+    "███████╗███████║██║     ██║   ╚████╔╝ ███████╗██║   ██║██║   ██║██║   ██║",
+    "╚════██║██╔══██║██║     ██║    ╚██╔╝  ╚════██║██║   ██║██║   ██║██║   ██║",
+    "███████║██║  ██║███████╗███████╗██║   ███████║╚██████╔╝╚██████╔╝╚██████╔╝",
+    "╚══════╝╚═╝  ╚═╝╚══════╝╚══════╝╚═╝   ╚══════╝ ╚═════╝  ╚═════╝  ╚═════╝"
+  ],
+  "title": "WebShell",
+  "username": "visitor",
+  "hostname": "sallysooo.com",
+  "password": "matcha",
+  "repoLink": "https://github.com/sallysooo/sallysooo.github.io",
+  "social": {
+    "email": "jisugim168@gmail.com",
+    "github": "sallysooo",
+    "linkedin": "jisoo-kim-66619b2bb"
+  },
+  "aboutGreeting": "Hi there. I'm Jisoo Kim — a security researcher & ML engineer. Welcome to my terminal.",
+  "flag": "flag{gg_y0u_f0und_my_s3cr3t_term1nal}",
+  "projects": [
+    [
+      "MATCHA_w0r1d!",
+      "Misc CTF challenge designed for the 31st PoC HackingCamp.",
+      "https://github.com/sallysooo/MATCHA_w0r1d"
+    ],
+    [
+      "Used-Car-Price-Prediction",
+      "ML model for used-car price prediction (KCC 2025 Honorable Mention).",
+      "https://github.com/sallysooo/Used-Car-Price-Prediction"
+    ],
+    [
+      "sallysooo.github.io",
+      "This very site, built with React + Vite.",
+      "https://github.com/sallysooo/sallysooo.github.io"
+    ]
+  ],
+  "colors": {
+    "background": "#0C0623",
+    "foreground": "#F8DDE5",
+    "banner": "#FF9951",
+    "border": {
+      "visible": true,
+      "color": "#FFADE2"
+    },
+    "prompt": {
+      "default": "#A5A7A7",
+      "user": "#FE6BC9",
+      "host": "#70FDFF",
+      "input": "#FF7685"
+    },
+    "link": {
+      "text": "#B6AAEE",
+      "highlightColor": "#FFADE2",
+      "highlightText": "#0C0623"
+    },
+    "commands": {
+      "textColor": "#FD9BDB"
+    }
+  }
+}

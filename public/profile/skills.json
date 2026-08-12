@@ -1,0 +1,31 @@
+{
+    "intro": "These are the core languages, frameworks, and platforms I work with for anomaly detection and security-focused ML research:",
+    "skills": [
+        {
+            "title": "Main Stacks",
+            "items": [
+                {
+                    "icon": "/images/skills/python.png",
+                    "title": "Python"
+                },
+                {
+                    "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pytorch/pytorch-original.svg",
+                    "title": "PyTorch"
+                },
+                {
+                    "icon": "/images/skills/docker.png",
+                    "title": "Docker"
+                },
+                {
+                    "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg",
+                    "title": "Linux"
+                }
+            ]
+        }
+    ],
+    "languages": [
+        { "flag": "🇰🇷", "label": "Korean" },
+        { "flag": "🇺🇸", "label": "English" },
+        { "flag": "🇨🇳", "label": "Chinese" }
+    ]
+}
