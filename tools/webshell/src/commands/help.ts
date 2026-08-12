@@ -19,6 +19,18 @@ const helpObj = {
       "'repo'",
       "View the Github Repository."
     ],
+    [
+      "'linkedin'",
+      "Connect with me."
+    ],
+    [
+      "'github'",
+      "Check out my code."
+    ],
+    [
+      "'email'",
+      "Get in touch."
+    ],
     ["'banner'",
       "Display the banner."
     ],

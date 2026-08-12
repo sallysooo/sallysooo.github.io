@@ -28,7 +28,7 @@ const PRE_USER = document.getElementById("pre-user");
 const HOST = document.getElementById("host");
 const USER = document.getElementById("user");
 const PROMPT = document.getElementById("prompt");
-const COMMANDS = ["help", "about", "projects", "whoami", "repo", "banner", "clear"];
+const COMMANDS = ["help", "about", "projects", "whoami", "repo", "banner", "clear", "linkedin", "github", "email"];
 const HISTORY : string[] = [];
 const SUDO_PASSWORD = command.password;
 const REPO_LINK = command.repoLink;
@@ -231,13 +231,35 @@ function commandHandler(input : string) {
       }, 500);
       break;
     case 'linkedin':
-      //add stuff here
+      if (bareMode) {
+        writeLines(["no.", "<br>"]);
+        break;
+      }
+      writeLines(["Redirecting to linkedin.com...", "<br>"]);
+      setTimeout(() => {
+        window.open(`https://www.linkedin.com/in/${command.social.linkedin}`, '_blank');
+      }, 500);
       break;
     case 'github':
-      //add stuff here
+      if (bareMode) {
+        writeLines(["no.", "<br>"]);
+        break;
+      }
+      writeLines(["Redirecting to github.com...", "<br>"]);
+      setTimeout(() => {
+        window.open(`https://github.com/${command.social.github}`, '_blank');
+      }, 500);
       break;
     case 'email':
-      //add stuff here
+      if (bareMode) {
+        writeLines(["no.", "<br>"]);
+        break;
+      }
+      writeLines([
+        "<br>",
+        `<a href='mailto:${command.social.email}'>${command.social.email}</a>`,
+        "<br>",
+      ]);
       break;
     case 'rm -rf':
       if (bareMode) {
