@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { createPortal } from 'react-dom';
 import PropTypes from 'prop-types';
 import '../css/lightbox.css';
 
@@ -26,7 +27,7 @@ function Lightbox({ images, initialIndex = 0, onClose }) {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [onClose]);
 
-  return (
+  return createPortal(
     <div
       className="lightbox-backdrop"
       role="presentation"
@@ -68,7 +69,8 @@ function Lightbox({ images, initialIndex = 0, onClose }) {
       {images.length > 1 && (
         <div className="lightbox-counter">{index + 1} / {images.length}</div>
       )}
-    </div>
+    </div>,
+    document.body,
   );
 }
 

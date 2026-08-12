@@ -103,29 +103,42 @@ function Experience(props) {
                     <div className={`tl-card${orgIconSrc ? ' tl-card--has-icon' : ''}`}>
                       {orgIconSrc && (
                       <div className="tl-card__org-icon">
-                        <img
-                          src={orgIconSrc}
-                          alt={item.subtitle}
-                          style={item.orgIconHeight ? { height: item.orgIconHeight } : undefined}
-                        />
-                      </div>
-                      )}
-                      <div className="tl-date">{item.dateText}</div>
-                      <h3 className="tl-title">{item.title}</h3>
-                      <div className="tl-subtitle">
                         {item.link ? (
-                          <a
-                            className="accent"
-                            href={item.link}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                          >
-                            {item.subtitle}
+                          <a href={item.link} target="_blank" rel="noopener noreferrer">
+                            <img
+                              src={orgIconSrc}
+                              alt={item.subtitle}
+                              style={item.orgIconHeight
+                                ? { height: item.orgIconHeight } : undefined}
+                            />
                           </a>
                         ) : (
-                          <span className="accent">{item.subtitle}</span>
+                          <img
+                            src={orgIconSrc}
+                            alt={item.subtitle}
+                            style={item.orgIconHeight ? { height: item.orgIconHeight } : undefined}
+                          />
                         )}
-                        {item.workType ? ` · ${item.workType}` : ''}
+                      </div>
+                      )}
+                      <div className="tl-card__header">
+                        <div className="tl-date">{item.dateText}</div>
+                        <h3 className="tl-title">{item.title}</h3>
+                        <div className="tl-subtitle">
+                          {item.link ? (
+                            <a
+                              className="accent"
+                              href={item.link}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                            >
+                              {item.subtitle}
+                            </a>
+                          ) : (
+                            <span className="accent">{item.subtitle}</span>
+                          )}
+                          {item.workType ? ` · ${item.workType}` : ''}
+                        </div>
                       </div>
 
                       {item.subActivities ? (

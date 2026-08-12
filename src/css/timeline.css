@@ -105,7 +105,7 @@
   margin: 0;
 }
 
-.tl-card--has-icon {
+.tl-card--has-icon .tl-card__header {
   padding-right: 140px;
 }
 
@@ -113,6 +113,10 @@
   position: absolute;
   top: var(--space-5);
   right: var(--space-5);
+}
+
+.tl-card__org-icon a {
+  display: block;
 }
 
 .tl-card__org-icon img {
@@ -246,8 +250,11 @@
      back up by moving the badge into its own strip above the title
      instead of beside it. */
   .tl-card--has-icon {
-    padding-right: var(--space-5);
     padding-top: 64px;
+  }
+
+  .tl-card--has-icon .tl-card__header {
+    padding-right: 0;
   }
 
   .tl-card__org-icon {

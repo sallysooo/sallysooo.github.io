@@ -95,14 +95,17 @@ function About(props) {
                             <img
                               src={item.orgIcon}
                               alt={item.cardSubtitle}
-                              style={item.orgIconHeight ? { height: item.orgIconHeight } : undefined}
+                              style={item.orgIconHeight
+                                ? { height: item.orgIconHeight } : undefined}
                             />
                           </div>
                         )}
-                        <div className="tl-date">{item.title}</div>
-                        <h3 className="tl-title">{item.cardTitle}</h3>
-                        <div className="tl-subtitle">
-                          <span className="accent">{item.cardSubtitle}</span>
+                        <div className="tl-card__header">
+                          <div className="tl-date">{item.title}</div>
+                          <h3 className="tl-title">{item.cardTitle}</h3>
+                          <div className="tl-subtitle">
+                            <span className="accent">{item.cardSubtitle}</span>
+                          </div>
                         </div>
                         {item.cardDetailedText && (
                           <div className="tl-detail">{item.cardDetailedText}</div>
