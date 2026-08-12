@@ -22,6 +22,15 @@ function SubActivity({ activity }) {
           <img src={activity.image} alt={activity.title} />
         </div>
       )}
+      {activity.images?.length > 0 && (
+        <div className="tl-subitem__gallery">
+          {activity.images.map((src) => (
+            <a key={src} href={src} target="_blank" rel="noopener noreferrer">
+              <img src={src} alt={activity.title} />
+            </a>
+          ))}
+        </div>
+      )}
       {activity.description?.length > 0 && (
         <ul className="tl-list">
           {activity.description.map((point) => (
@@ -42,6 +51,7 @@ SubActivity.propTypes = {
     title: PropTypes.string.isRequired,
     link: PropTypes.string,
     image: PropTypes.string,
+    images: PropTypes.arrayOf(PropTypes.string),
     description: PropTypes.arrayOf(PropTypes.string),
   }).isRequired,
 };
