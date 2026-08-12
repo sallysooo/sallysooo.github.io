@@ -28,7 +28,7 @@ const PRE_USER = document.getElementById("pre-user");
 const HOST = document.getElementById("host");
 const USER = document.getElementById("user");
 const PROMPT = document.getElementById("prompt");
-const COMMANDS = ["help", "about", "projects", "whoami", "repo", "banner", "clear", "linkedin", "github", "email"];
+const COMMANDS = ["help", "about", "projects", "whoami", "repo", "banner", "clear", "linkedin", "github", "email", "exit"];
 const HISTORY : string[] = [];
 const SUDO_PASSWORD = command.password;
 const REPO_LINK = command.repoLink;
@@ -260,6 +260,19 @@ function commandHandler(input : string) {
         `<a href='mailto:${command.social.email}'>${command.social.email}</a>`,
         "<br>",
       ]);
+      break;
+    case 'flag':
+      if (bareMode) {
+        writeLines(["there's no flag here anymore.", "<br>"]);
+        break;
+      }
+      writeLines(["<br>", `<span class='command'>${command.flag}</span>`, "<br>"]);
+      break;
+    case 'exit':
+      writeLines(["Closing terminal...", "<br>"]);
+      setTimeout(() => {
+        window.parent.postMessage({ type: 'webshell:exit' }, window.location.origin);
+      }, 400);
       break;
     case 'rm -rf':
       if (bareMode) {

@@ -12,9 +12,17 @@ function TerminalOverlay({ onClose }) {
     };
     window.addEventListener('keydown', handleKeyDown);
 
+    const handleMessage = (e) => {
+      if (e.origin === window.location.origin && e.data?.type === 'webshell:exit') {
+        onClose();
+      }
+    };
+    window.addEventListener('message', handleMessage);
+
     return () => {
       document.body.style.overflow = previousOverflow;
       window.removeEventListener('keydown', handleKeyDown);
+      window.removeEventListener('message', handleMessage);
     };
   }, [onClose]);
 

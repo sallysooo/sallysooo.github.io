@@ -37,6 +37,10 @@ const helpObj = {
     [
       "'clear'",
       "Clear the terminal."
+    ],
+    [
+      "'exit'",
+      "Close this terminal."
     ]
   ],
 }
