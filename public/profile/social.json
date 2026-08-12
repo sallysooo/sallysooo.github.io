@@ -2,19 +2,19 @@
     "social": [
         {
             "network" : "linkedin",
-            "href": "https://linkedin.com/"
+            "href": "https://www.linkedin.com/in/jisoo-kim-66619b2bb"
         },
         {
             "network" : "github",
-            "href": "https://github.com/mayankagarwal09"
+            "href": "https://github.com/sallysooo"
         },
         {
-            "network" : "leetcode",
-            "href": "https://leetcode.com/"
+            "network" : "rss",
+            "href": "https://sallysooo.tistory.com/"
         },
         {
             "network" : "email",
-            "href": "mailto:test@test.com"
+            "href": "mailto:jisugim168@gmail.com"
         }
     ]
 }

@@ -1,33 +1,60 @@
 {
     "experiences": [
         {
-            "title": "Software Engineer",
-            "subtitle": "XYZ Ltd",
-            "workType": "Full-time",
-            "workDescription": [
-                "Integrated **2** new product.",
-                "Worked on adding **def** to **bcd**. Improved speed by 50%."
-            ],
-            "dateText": "06/20XX – Present"
+            "title": "25th AI Research Member",
+            "subtitle": "BOAZ",
+            "link": "https://www.bigdataboaz.com/",
+            "dateText": "Since Jul 2025",
+            "subActivities": [
+                {
+                    "title": "[ADV-project] HEART: Harm Estimation and Ranking of Traffic for Cache-Hit-Ratio Recovery in E-Commerce Logs"
+                },
+                {
+                    "title": "[Mini-project 2] LLM-Based OOD Detection in Sentiment Classification"
+                },
+                {
+                    "title": "[Mini-project 1] TorchDocs: A PyTorch document-based RAG chatbot in CLI application"
+                }
+            ]
         },
         {
-            "title": "Software Engineer",
-            "subtitle": "XYZ Ltd",
-            "workType": "Internship",
-            "workDescription": [
-                "Worked on abc."
-            ],
-            "dateText": "01/20XX – 05/20XX"
+            "title": "Undergraduate Research Intern",
+            "subtitle": "SNSec Lab (System Network Security Lab), SMWU",
+            "link": "https://www.snsec.net/",
+            "dateText": "Since May 2025",
+            "subActivities": [
+                {
+                    "title": "Real-time anomaly detection in automotive Ethernet",
+                    "description": [
+                        "Working on real-time anomaly detection in automotive Ethernet traffic (IVN) using various deep learning techniques.",
+                        "Advisor: Prof. Seonghoon Jeong."
+                    ]
+                }
+            ]
         },
         {
-            "title": "App Developer",
-            "subtitle": "ABC Pvt Ltd",
-            "workType": "Freelance",
-            "workDescription": [
-                "Developed the official apps for the startup for both Android and iOS using hybrid framework.",
-                "Done bcd work."
-            ],
-            "dateText": "09/20XX – 01/20YY"
+            "title": "Web Hacking Academic Director · Member",
+            "subtitle": "SISS (Sookmyung Information Security Study)",
+            "link": "https://sissofsookmyung.vercel.app/",
+            "dateText": "Since 2023",
+            "subActivities": [
+                {
+                    "title": "POC Hacking Camp (27th – 31st)",
+                    "link": "https://hackingcamp.org/",
+                    "description": [
+                        "Created Web Hacking CTF challenges for the 29th/30th/31st POC Hacking Camp.",
+                        "Official staff member for 3 years."
+                    ],
+                    "image": "images/experience/siss-hackingcamp.jpg"
+                },
+                {
+                    "title": "POC Conference 2024",
+                    "description": [
+                        "Participated as an official staff member and the English host speaker."
+                    ],
+                    "image": "images/experience/siss-pocconf2024.jpg"
+                }
+            ]
         }
     ]
 }

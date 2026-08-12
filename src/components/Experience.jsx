@@ -7,6 +7,45 @@ import endpoints from '../constants/endpoints';
 import FallbackSpinner from './FallbackSpinner';
 import '../css/timeline.css';
 
+function SubActivity({ activity }) {
+  return (
+    <div className="tl-subitem">
+      <div className="tl-subitem__title">
+        {activity.link ? (
+          <a href={activity.link} target="_blank" rel="noopener noreferrer">
+            {activity.title}
+          </a>
+        ) : activity.title}
+      </div>
+      {activity.image && (
+        <div className="tl-subitem__image">
+          <img src={activity.image} alt={activity.title} />
+        </div>
+      )}
+      {activity.description?.length > 0 && (
+        <ul className="tl-list">
+          {activity.description.map((point) => (
+            <li key={point}>
+              <ReactMarkdown components={{ p: 'span' }}>
+                {point}
+              </ReactMarkdown>
+            </li>
+          ))}
+        </ul>
+      )}
+    </div>
+  );
+}
+
+SubActivity.propTypes = {
+  activity: PropTypes.shape({
+    title: PropTypes.string.isRequired,
+    link: PropTypes.string,
+    image: PropTypes.string,
+    description: PropTypes.arrayOf(PropTypes.string),
+  }).isRequired,
+};
+
 function Experience(props) {
   const { header } = props;
   const [data, setData] = useState(null);
@@ -34,18 +73,38 @@ function Experience(props) {
                     <div className="tl-date">{item.dateText}</div>
                     <h3 className="tl-title">{item.title}</h3>
                     <div className="tl-subtitle">
-                      <span className="accent">{item.subtitle}</span>
+                      {item.link ? (
+                        <a
+                          className="accent"
+                          href={item.link}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          {item.subtitle}
+                        </a>
+                      ) : (
+                        <span className="accent">{item.subtitle}</span>
+                      )}
                       {item.workType ? ` · ${item.workType}` : ''}
                     </div>
-                    <ul className="tl-list">
-                      {item.workDescription.map((point) => (
-                        <li key={point}>
-                          <ReactMarkdown components={{ p: 'span' }}>
-                            {point}
-                          </ReactMarkdown>
-                        </li>
-                      ))}
-                    </ul>
+
+                    {item.subActivities ? (
+                      <div className="tl-subitems">
+                        {item.subActivities.map((activity) => (
+                          <SubActivity key={activity.title} activity={activity} />
+                        ))}
+                      </div>
+                    ) : (
+                      <ul className="tl-list">
+                        {item.workDescription?.map((point) => (
+                          <li key={point}>
+                            <ReactMarkdown components={{ p: 'span' }}>
+                              {point}
+                            </ReactMarkdown>
+                          </li>
+                        ))}
+                      </ul>
+                    )}
                   </div>
                 </div>
               ))}
