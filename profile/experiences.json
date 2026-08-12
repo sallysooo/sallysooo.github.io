@@ -1,0 +1,87 @@
+{
+    "experiences": [
+        {
+            "title": "25th AI Research Member",
+            "subtitle": "BOAZ",
+            "link": "https://www.bigdataboaz.com/",
+            "orgIcon": "/images/experience/BOAZ_logo.svg",
+            "dateText": "Since Jul 2025",
+            "subActivities": [
+                {
+                    "title": "[ADV-project] HEART: Harm Estimation and Ranking of Traffic for Cache-Hit-Ratio Recovery in E-Commerce Logs",
+                    "images": [
+                        "/images/experience/boaz_conference.jpg",
+                        "/images/experience/boaz_conference_1.jpg",
+                        "/images/experience/boaz_conference_2.jpg",
+                        "/images/experience/boaz_conference_3.jpg"
+                    ]
+                },
+                {
+                    "title": "[Mini-project 2] LLM-Based OOD Detection in Sentiment Classification"
+                },
+                {
+                    "title": "[Mini-project 1] TorchDocs: A PyTorch document-based RAG chatbot in CLI application"
+                }
+            ]
+        },
+        {
+            "title": "Undergraduate Research Intern",
+            "subtitle": "SNSec Lab (System Network Security Lab), SMWU",
+            "link": "https://www.snsec.net/",
+            "orgIcon": "/images/experience/sookmyung_logo.svg",
+            "orgIconHeight": 60,
+            "dateText": "Since May 2025",
+            "subActivities": [
+                {
+                    "title": "Real-time anomaly detection in automotive Ethernet",
+                    "description": [
+                        "Working on real-time anomaly detection in automotive Ethernet traffic (IVN) using various deep learning techniques.",
+                        "Advisor: Prof. Seonghoon Jeong."
+                    ],
+                    "images": [
+                        "/images/experience/snsec_lab_1.jpg",
+                        "/images/experience/snsec_lab_2.jpg"
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "Web Hacking Academic Director · Member",
+            "subtitle": "SISS (Sookmyung Information Security Study)",
+            "link": "https://sissofsookmyung.vercel.app/",
+            "orgIconLight": "/images/experience/siss_logo_light.png",
+            "orgIconDark": "/images/experience/siss_logo_dark.png",
+            "orgIconHeight": 44,
+            "dateText": "Since 2023",
+            "subActivities": [
+                {
+                    "title": "POC Hacking Camp (27th – 31st)",
+                    "link": "https://hackingcamp.org/",
+                    "description": [
+                        "Created Web Hacking CTF challenges for the 29th/30th/31st POC Hacking Camp.",
+                        "Official staff member for 3 years."
+                    ],
+                    "images": [
+                        "/images/experience/27th_hcamp.jpg",
+                        "/images/experience/28th_hcamp.jpg",
+                        "/images/experience/29th_hcamp.png",
+                        "/images/experience/31st_hcamp.jpg"
+                    ]
+                },
+                {
+                    "title": "POC Conference 2024",
+                    "description": [
+                        "Participated as an official staff member and the English host speaker."
+                    ],
+                    "images": [
+                        "/images/experience/poc2024.png",
+                        "/images/experience/poc2024_1.jpg",
+                        "/images/experience/poc2024_2.jpg",
+                        "/images/experience/poc2024_3.jpg",
+                        "/images/experience/poc2024_4.jpg"
+                    ]
+                }
+            ]
+        }
+    ]
+}

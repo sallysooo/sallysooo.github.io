@@ -1,0 +1,313 @@
+{
+    "projects": [
+        {
+            "title": "MATCHA_w0r1d!",
+            "category": "Security",
+            "field": "Misc",
+            "dateRange": {
+                "start": "2025-07-01",
+                "end": "2025-08-30"
+            },
+            "image": "/images/projects/matcha_world.png",
+            "bodyText": "Designed a Misc CTF challenge for the 31st PoC HackingCamp — my first '1 solved' challenge.",
+            "detailBody": "### 🚩 The 31st PoC Hacking Camp CTF — Misc Challenge\n\nDesigned and implemented an advanced Misc challenge, **'MATCHA w0r1d!'**, for a national-level Capture The Flag (CTF) competition hosted at the 31st PoC HackingCamp. Also worked as an official staff member and manager of 2 additional Web Security challenges during the camp.\n\nMy first challenge to receive only a single solve during the competition!",
+            "gallery": [
+                "/images/projects/matcha_world.png",
+                "/images/projects/matcha_world_1.jpg",
+                "/images/projects/matcha_world_2.jpg"
+            ],
+            "links": [
+                {
+                    "text": "GitHub",
+                    "href": "https://github.com/sallysooo/MATCHA_w0r1d"
+                }
+            ],
+            "tags": [
+                "CTF",
+                "Misc",
+                "Challenge Design"
+            ]
+        },
+        {
+            "title": "TiRaMiSu CAKE",
+            "category": "Security",
+            "field": "Web Hacking",
+            "dateRange": {
+                "start": "2024-07-01",
+                "end": "2024-08-17"
+            },
+            "image": "/images/projects/tiramisu_cake.png",
+            "bodyText": "My first web hacking CTF challenge — designed for the 29th PoC HackingCamp.",
+            "detailBody": "### 🚩 The 29th PoC Hacking Camp CTF — Web Hacking Challenge\n\nDesigned and implemented the **'TiRaMiSu CAKE'** web hacking challenge for the 29th PoC HackingCamp CTF — my first experience designing an actual web hacking challenge.",
+            "gallery": [
+                "/images/projects/tiramisu_cake.png"
+            ],
+            "links": [
+                {
+                    "text": "GitHub",
+                    "href": "https://github.com/sallysooo/domhack"
+                }
+            ],
+            "tags": [
+                "CTF",
+                "Web Hacking",
+                "Challenge Design"
+            ]
+        },
+        {
+            "title": "Mission Divorce",
+            "category": "Security",
+            "field": "Web Hacking",
+            "dateRange": {
+                "start": "2024-12-10",
+                "end": "2025-01-05"
+            },
+            "image": "/images/projects/mission-divorce.png",
+            "bodyText": "Web Hacking CTF challenge designed for the 30th PoC HackingCamp.",
+            "detailBody": "### 🚩 The 30th PoC Hacking Camp CTF — Web Hacking Challenge\n\nDesigned and implemented the **'Mission Divorce'** web hacking challenge for the 30th PoC HackingCamp CTF.",
+            "gallery": [
+                "/images/projects/mission-divorce.png"
+            ],
+            "links": [
+                {
+                    "text": "GitHub",
+                    "href": "https://github.com/sallysooo/Mission-Divorce"
+                }
+            ],
+            "tags": [
+                "CTF",
+                "Web Hacking",
+                "Challenge Design"
+            ]
+        },
+        {
+            "title": "AERO reproduction",
+            "category": "Security",
+            "field": "AI for security",
+            "dateRange": {
+                "start": "2025-05-14",
+                "end": "2025-08-11"
+            },
+            "image": "/images/projects/AERO.png",
+            "bodyText": "Reproducing the AERO paper for AI-driven security research.",
+            "detailBody": "**AERO reproduction**\n\nReproducing this paper's approach as part of ongoing research into AI-driven security and anomaly detection.",
+            "gallery": [
+                "/images/projects/AERO.png"
+            ],
+            "links": [
+                {
+                    "text": "GitHub",
+                    "href": "https://github.com/sallysooo/AERO"
+                }
+            ],
+            "tags": [
+                "Paper Reproduction",
+                "Anomaly Detection"
+            ]
+        },
+        {
+            "title": "Lens reproduction",
+            "category": "Security",
+            "field": "AI for security",
+            "dateRange": {
+                "start": "2025-10-27",
+                "end": "2026-01-11"
+            },
+            "image": "/images/projects/lens.png",
+            "bodyText": "Reproducing 'Lens: A Foundation Model for Network Traffic' — currently in a private repository.",
+            "detailBody": "**Lens: A Foundation Model for Network Traffic**\n\nReproducing this paper's approach to representation learning for network traffic analysis, as part of ongoing security ML research.\n\nCurrently in a private repository while the reproduction is in progress.",
+            "gallery": [
+                "/images/projects/lens.png"
+            ],
+            "links": [],
+            "tags": [
+                "Paper Reproduction",
+                "Network Traffic",
+                "Foundation Model"
+            ]
+        },
+        {
+            "title": "Explainable Unsupervised IDS for Automotive Ethernet",
+            "category": "Security",
+            "dateRange": {
+                "start": "2025-09-01",
+                "end": "2026-07-12"
+            },
+            "bodyText": "Paper submitted, currently awaiting review.",
+            "detailBody": "**Explainable Unsupervised IDS for Automotive Ethernet**\n\nResearch on an explainable, unsupervised intrusion detection system for automotive Ethernet traffic.\n\nPaper submitted and currently awaiting review.",
+            "gallery": [],
+            "links": [],
+            "tags": [
+                "IDS",
+                "Automotive Security",
+                "Unsupervised Learning"
+            ]
+        },
+        {
+            "title": "UCSD Qualcomm Institute 14th AI Development Project 🏆",
+            "category": "AI & Data Science",
+            "field": "Data Mining",
+            "dateRange": {
+                "start": "2025-01-08",
+                "end": "2025-02-15"
+            },
+            "image": "/images/projects/QI_startoff.jpg",
+            "bodyText": "Team leader for a used-car price prediction ML project — 3rd place at Qualcomm Institute Hackathon + KCC 2025 Honorable Mention.",
+            "detailBody": "🏆 **UCSD Qualcomm Institute AI Hackathon — 3rd place**\n🏆 **KCC 2025 (Korea Computer Congress) — Honorable Mention Award**\n\nParticipated as team leader for a machine learning development project on **'Final Listing Price Prediction for Private Used Car Sellers'**, earning 3rd place at the 14th Qualcomm Institute Hackathon.\n\nWrote a first-author paper on this topic, *'Development of a Machine Learning-based Prediction Model for Used Car Listing Price in Germany'*, for KCC 2025 — receiving an Honorable Mention Award.\n\n[Read the school's interview article →](https://www.sookmyung.ac.kr/kr/news/award-news.do?mode=view&articleNo=90412)",
+            "gallery": [
+                "/images/projects/QI_startoff.jpg",
+                "/images/projects/QI_presentation1.png",
+                "/images/projects/QI_presentation2.png",
+                "/images/projects/QI_final_presentation.jpg",
+                "/images/projects/QI_final_achievement.jpg",
+                "/images/projects/endofQI_1.jpg",
+                "/images/projects/KCC2025_1.jpg",
+                "/images/projects/KCC2025_2.jpg",
+                "/images/projects/KCC2025_award.jpg",
+                "/images/projects/UCSD_award.jpg",
+                "/images/projects/UCSD_certificate.jpg"
+            ],
+            "links": [
+                {
+                    "text": "GitHub",
+                    "href": "https://github.com/sallysooo/Used-Car-Price-Prediction"
+                }
+            ],
+            "tags": [
+                "Machine Learning",
+                "Data Mining",
+                "Hackathon",
+                "Team Lead"
+            ]
+        },
+        {
+            "title": "Reservia: AI Reservation Manager for Custom Services 🏆",
+            "category": "AI & Data Science",
+            "field": "AI Agent",
+            "dateRange": {
+                "start": "2026-03-07",
+                "end": "2026-06-13"
+            },
+            "image": "/images/projects/reservia_1.png",
+            "bodyText": "AI reservation manager agent — 3rd place at the 2026 Upstage Low-Code AI Challenge Hackathon.",
+            "detailBody": "🏆 **2026 Upstage Low-Code AI Challenge Hackathon — 3rd place**\n\nBuilt an AI reservation management agent for custom services, placing 3rd at the 2026 Upstage Low-Code AI Challenge Hackathon.",
+            "gallery": [
+                "/images/projects/reservia_1.png",
+                "/images/projects/reservia_2.png",
+                "/images/projects/reservia_3.png"
+            ],
+            "links": [
+                {
+                    "text": "GitHub",
+                    "href": "https://github.com/NailAgent/agent"
+                }
+            ],
+            "tags": [
+                "AI Agent",
+                "Hackathon",
+                "Low-Code AI"
+            ]
+        },
+        {
+            "title": "HEART: Harm Estimation and Ranking of Traffic for Cache-Hit-Ratio Recovery in E-Commerce Logs",
+            "category": "AI & Data Science",
+            "field": "Data Mining",
+            "dateRange": {
+                "start": "2026-01-08",
+                "end": "2026-08-21"
+            },
+            "image": "/images/projects/HEART.png",
+            "bodyText": "BOAZ ADV-project — a harm-ranking approach for cache-pollution bot detection and cache-hit-ratio recovery. (IEEE BigData 2026 research)",
+            "detailBody": "**HEART: Harm Estimation and Ranking of Traffic for Cache-Hit-Ratio Recovery in E-Commerce Logs**\n\nA BOAZ advanced project researching cache-pollution bot detection and cache-hit-ratio recovery in e-commerce web logs, developed toward an IEEE BigData 2026 submission.",
+            "gallery": [
+                "/images/projects/HEART.png"
+            ],
+            "links": [],
+            "tags": [
+                "Data Mining",
+                "Bot Detection",
+                "Research"
+            ]
+        },
+        {
+            "title": "TorchDocs: A PyTorch document-based RAG chatbot in CLI application",
+            "category": "AI & Data Science",
+            "field": "NLP",
+            "dateRange": {
+                "start": "2025-08-01",
+                "end": "2025-08-28"
+            },
+            "image": "/images/projects/TorchDocs.png",
+            "bodyText": "A PyTorch-documentation RAG chatbot, built as a BOAZ mini-project.",
+            "detailBody": "**TorchDocs: A PyTorch document-based RAG chatbot in CLI application**\n\nA BOAZ mini-project — a retrieval-augmented generation (RAG) chatbot over PyTorch documentation, built as a CLI application.",
+            "gallery": [
+                "/images/projects/TorchDocs.png"
+            ],
+            "links": [
+                {
+                    "text": "GitHub",
+                    "href": "https://github.com/BOAZ-mini-1/TorchDocs"
+                },
+                {
+                    "text": "Slides",
+                    "href": "https://www.canva.com/design/DAGw-tVP--U/KnoB4CYAS05HRN51nQXFWg/edit?utm_content=DAGw-tVP--U&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"
+                }
+            ],
+            "tags": [
+                "NLP",
+                "RAG",
+                "LLM"
+            ]
+        },
+        {
+            "title": "LLM-Based OOD Detection in Sentiment Classification",
+            "category": "AI & Data Science",
+            "field": "NLP",
+            "dateRange": {
+                "start": "2025-11-06",
+                "end": "2025-12-04"
+            },
+            "image": "/images/projects/OOD.png",
+            "bodyText": "Out-of-distribution detection for sentiment classification using LLMs — a BOAZ mini-project.",
+            "detailBody": "**LLM-Based OOD Detection in Sentiment Classification**\n\nA BOAZ mini-project exploring out-of-distribution (OOD) detection techniques for sentiment classification using large language models.",
+            "gallery": [
+                "/images/projects/OOD.png"
+            ],
+            "links": [
+                {
+                    "text": "GitHub",
+                    "href": "https://github.com/BOAZ-mini-2/OOD-Sentiment-LLM"
+                },
+                {
+                    "text": "Slides",
+                    "href": "https://www.canva.com/design/DAG6LRzuWls/PraQVyp2TdGcjYZU20CWWA/edit?ui=eyJEIjp7IlAiOnsiQiI6ZmFsc2V9fX0"
+                }
+            ],
+            "tags": [
+                "NLP",
+                "OOD Detection",
+                "LLM"
+            ]
+        },
+        {
+            "title": "ScholarLens",
+            "category": "AI & Data Science",
+            "image": "/images/projects/scholarlens.jpg",
+            "bodyText": "A university course project — full description coming soon.",
+            "detailBody": "**ScholarLens**\n\nA project built for a university course. Full write-up coming soon.",
+            "gallery": [
+                "/images/projects/scholarlens.jpg",
+                "/images/projects/scholarlens2.jpg"
+            ],
+            "links": [
+                {
+                    "text": "GitHub",
+                    "href": "https://github.com/sallysooo/ScholarLens"
+                }
+            ],
+            "tags": [
+                "Course Project"
+            ]
+        }
+    ]
+}
