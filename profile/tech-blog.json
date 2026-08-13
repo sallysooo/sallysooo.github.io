@@ -5,7 +5,7 @@
             "link": "https://sallysooo.tistory.com/139",
             "date": "2026-08-10",
             "category": "후기",
-            "thumbnail": "https://blog.kakaocdn.net/dn/cIc6vo/dJMcah6oRFY/GfjkfcLogIT59cK8V7D2ek/img.png",
+            "thumbnail": "https://img1.daumcdn.net/thumb/R800x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FHztKa%2FdJMcaftZdvs%2FAAAAAAAAAAAAAAAAAAAAAGukZQzEb8pcDRVaIbNN9-s3buyLue2SIk0XxhkS4qqv%2Ftfile.jpg%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1788188399%26allow_ip%3D%26allow_referer%3D%26signature%3Dw7qcX5i57z0W2zpqO9d%252FVtovPrg%253D",
             "excerpt": "내 대학생활의 1년을 차지했던 뽀아즈! 작년 이맘때 신입으로 지원하기 위해 계속 구글링하면서 분석 부문 합격 후기랑 서류 면접 후기를 찾아봤던 입장으로서 미래의 후배님들에게 참고용으로 도움도 될 겸, 알찼던 1년간의 활동 회고도 겸사겸사 하기 위해 작성해보아요 사실 합격하자마자 적고 싶…"
         },
         {
@@ -13,7 +13,7 @@
             "link": "https://sallysooo.tistory.com/138",
             "date": "2026-03-11",
             "category": "Linux",
-            "thumbnail": "https://blog.kakaocdn.net/dn/bcetd5/dJMcahDBcjE/RmbExmpD6pMlo1FHDRflkK/img.png",
+            "thumbnail": "https://img1.daumcdn.net/thumb/R800x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FcecEZp%2FdJMcai3xAQf%2FAAAAAAAAAAAAAAAAAAAAAOnO7rekJ23oFJiMHc48-Qg-HN6Y5nS7S-CBjnLgwR7w%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1788188399%26allow_ip%3D%26allow_referer%3D%26signature%3D6T4tJh%252Bb2w4VK0Ri31wrafiXsoA%253D",
             "excerpt": "대용량 데이터셋을 업로드 해야하는데 100MB 제한으로 막혀버려서 lfs(large file storage)를 설치해서 사용해보려고 한다. (우분투 24.04 기준) remote: error: GH001: Large files detected. You may want to try Git…"
         },
         {
@@ -21,7 +21,7 @@
             "link": "https://sallysooo.tistory.com/137",
             "date": "2026-02-23",
             "category": "Python",
-            "thumbnail": null,
+            "thumbnail": "https://img1.daumcdn.net/thumb/R800x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2Fb2Enwc%2FdJMcabb9xMa%2FAAAAAAAAAAAAAAAAAAAAAPB7s2USLpie2BZ1GDoCCeA1pSAFbYs_VPBpv-PoHQU0%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1788188399%26allow_ip%3D%26allow_referer%3D%26signature%3De512%252FTzK0P4BBYoQPVgEAaMjLxo%253D",
             "excerpt": "일단 수많은 에러와 cuda version과 wheel, nvcc 버전의 충돌 오류를 마주한 저는... 결국 miniforge를 아예 밀고 다시 재설치를 하였답니다 오류를 해결하다 보니 점점 라이브러리 경로랑 버전도 다 꼬여서 그냥 밀고 재설치하는 게 제일 정답이라는 팩트를 알려드리며.…"
         },
         {
@@ -29,7 +29,7 @@
             "link": "https://sallysooo.tistory.com/136",
             "date": "2026-01-10",
             "category": "Linux",
-            "thumbnail": "https://blog.kakaocdn.net/dn/m5ob2/dJMcaiWiFsG/YPGulwSqJMMAJwGRznrVa1/img.png",
+            "thumbnail": "https://img1.daumcdn.net/thumb/R800x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FbzQSdL%2FdJMcah4bTqR%2FAAAAAAAAAAAAAAAAAAAAAL4hnPxA8ulaxoHLpuIbjjs-SaPV8sXPDYKVKU_BagXB%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1788188399%26allow_ip%3D%26allow_referer%3D%26signature%3DtUqGiyzQxdNhC6fd3X0kFJCIUag%253D",
             "excerpt": "우분투에 새로운 가상환경을 파서 환경설정을 하던 와중 실험에 사용할 wandb도 새로 설치하려 했는데, API key가 먹지 않아서 발생한 오류에 대한 해결 방법 기록! 우선 wandb 사이트에 회원가입을 이미 완료했다는 가정 하에 아래 작업을 진행하므로, 혹시 회원가입을 하지 않았다면…"
         },
         {
@@ -37,7 +37,7 @@
             "link": "https://sallysooo.tistory.com/135",
             "date": "2025-12-29",
             "category": "Linux",
-            "thumbnail": "https://blog.kakaocdn.net/dn/AkNng/dJMcacPg5oI/CmX4ptCaeOpyebJZfM25Xk/img.png",
+            "thumbnail": "https://img1.daumcdn.net/thumb/R800x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FAkNng%2FdJMcacPg5oI%2FAAAAAAAAAAAAAAAAAAAAAPDvuBESuT3ThNjGDJI_4g6GuzZmdxJt6IMhysFVqlTn%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1788188399%26allow_ip%3D%26allow_referer%3D%26signature%3Dw0W7QNHy88kSWy2BlhVkv%252Bxv9%252BI%253D",
             "excerpt": "우분투 환경에서 터미널로 작업관리자를 비롯한 각종 설정 확인 작업들을 하는 방법 기록 1. 작업 관리자 열기 작업 관리자 열기는 2가지 방법으로 할 수 있는데, 윈도우의 Ctrl+Alt+Del 키와 같이 창을 띄워서 직접 UI로 확인하려면 다음 명령어를 입력하면 된다. $ gnome-s…"
         },
         {
@@ -45,7 +45,7 @@
             "link": "https://sallysooo.tistory.com/134",
             "date": "2025-12-28",
             "category": "Python",
-            "thumbnail": "https://blog.kakaocdn.net/dn/YixpH/dJMcadN5ZHV/FwbNdnKkS6Bu9xnKIagvU1/img.png",
+            "thumbnail": "https://img1.daumcdn.net/thumb/R800x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FbLDjSe%2FdJMcacPgJps%2FAAAAAAAAAAAAAAAAAAAAAEEezqMDQiSFw4nZeDd3Ba6MooFLPDAF9OhvrsySmzb5%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1788188399%26allow_ip%3D%26allow_referer%3D%26signature%3DVO1YQmvUhhpP8DnEPGxklFP6zvA%253D",
             "excerpt": "1. Polars(폴라스)란? Rust로 만들어져 Python, JavaScript 등에서 사용할 수 있는 고성능 데이터프레임 라이브러리로, Pandas의 강력한 대안으로 떠오르며 특히 대용량 데이터 처리에서 뛰어난 속도를 자랑한다. 또한 멀티코어 CPU를 활용한 병렬처리, 벡터화된 연…"
         },
         {
@@ -53,7 +53,7 @@
             "link": "https://sallysooo.tistory.com/133",
             "date": "2025-12-20",
             "category": "Python",
-            "thumbnail": null,
+            "thumbnail": "https://img1.daumcdn.net/thumb/R800x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2Fc46f15%2FdJMcaaw6AhL%2FAAAAAAAAAAAAAAAAAAAAADOP5MJ1lmYhkakFSBiAJtIaYy3YAA8VJstXlD2NOGfE%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1788188399%26allow_ip%3D%26allow_referer%3D%26signature%3D%252FrXZkwGRrDDo%252F8y2LmqKD1g8t8I%253D",
             "excerpt": "모델링 코드를 작성하거나 전처리를 진행할 때 가장 중요한 것은 코드의 \"효율성\"이다. 이 때 가장 많이 활용하는 것이 바로 vectorization(벡터화) 인데, 아직도 나를 포함하여 많은 학생 및 연구자들은 매우 비효율적인 무한 for 루프 코딩 스타일에서 벗어나지 못하고 있는 것이…"
         },
         {
@@ -61,7 +61,7 @@
             "link": "https://sallysooo.tistory.com/132",
             "date": "2025-08-08",
             "category": "Ai",
-            "thumbnail": "https://blog.kakaocdn.net/dn/6WHne/btsPNIgEglu/DOqpEX5VwYATmNaZ903S5k/img.png",
+            "thumbnail": "https://img1.daumcdn.net/thumb/R800x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FvWrmx%2FbtsPM0oNdrh%2FAAAAAAAAAAAAAAAAAAAAAJeeuEUyOcC7QzQkata33Pl7C-kU2PR7VquyfJQSlUIP%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1788188399%26allow_ip%3D%26allow_referer%3D%26signature%3DyC4jh2wbkIXL5Z7WFNd7rXXx4XY%253D",
             "excerpt": "1. CNN의 흐름 흐름을 이해하기 위해서는 각 모델들이 \"왜 만들어졌는가?\", \"어떤 문제를 해결했는가?\", \"무슨 구조적 특징이 있는가?\"를 중심으로 이해하면 편하다. 1-1. LeNet (1998) - 1998년 CNN을 처음 개발한 Yann LeCun의 연구팀이 제시한 CNN 모…"
         },
         {
@@ -69,7 +69,7 @@
             "link": "https://sallysooo.tistory.com/131",
             "date": "2025-08-04",
             "category": "Python",
-            "thumbnail": null,
+            "thumbnail": "https://img1.daumcdn.net/thumb/R800x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FbROVwc%2FbtsPFf8yBd9%2FAAAAAAAAAAAAAAAAAAAAAAC7VlwmRmHmGCnHWh9GKXB3iLecRhDkdI1ycveExKS9%2Fimg.webp%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1788188399%26allow_ip%3D%26allow_referer%3D%26signature%3DStR%252FIbXEHMW%252FscSpZf8YwFPGSt8%253D",
             "excerpt": "1. 그래프의 개념 - 인접 행렬 / 인접 리스트 그래프: 노드(vertex)와 간선(edge)을 이용한 비선형 데이터 구조 보통 그래프는 데이터 간의 관계를 표현하는 데 사용 데이터를 노드로, 노드 간의 관계나 흐름을 간선으로 표현하며, 간선은 방향이 있을 수도 있고 없을 수도 있음…"
         },
         {
@@ -77,7 +77,7 @@
             "link": "https://sallysooo.tistory.com/130",
             "date": "2025-08-01",
             "category": "Ai",
-            "thumbnail": "https://blog.kakaocdn.net/dn/pjNyr/btsPF2TRzN5/rddMntDwDrxV3ghIqBdlhk/img.png",
+            "thumbnail": "https://img1.daumcdn.net/thumb/R800x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2Fbyxiir%2FbtsPE2Ai0nZ%2FAAAAAAAAAAAAAAAAAAAAAI64svra9vrHrtjE36rTsNUmB_eLn0IWftub04MEonXX%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1788188399%26allow_ip%3D%26allow_referer%3D%26signature%3DRqfW%252FoUvVReyX5rvd2rPVupYSyQ%253D",
             "excerpt": "[기본 용어 정리] 파인튜닝(fine-tuning) : 기존에 학습된(pre-trained) 모델을 새로운 데이터에 맞춰 재학습시키는 과정 최적화 : 한정된 GPU 자원에서 학습 속도와 메모리 효율을 극대화하기 위해 기술/설정/코드를 개선하는 일련의 행위 GPU가 실제로 어떻게 쓰이는지…"
         }
     ]
