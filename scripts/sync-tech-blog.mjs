@@ -10,6 +10,7 @@ const OUTPUT_PATH = path.resolve(
   path.dirname(fileURLToPath(import.meta.url)),
   '../public/profile/tech-blog.json',
 );
+const FETCH_HEADERS = { 'User-Agent': 'Mozilla/5.0 (compatible; sallysooo-portfolio-sync/1.0)' };
 
 const NAMED_ENTITIES = {
   amp: '&',
@@ -40,15 +41,28 @@ function toExcerpt(html, maxLength = 160) {
   return `${text.slice(0, maxLength).trimEnd()}…`;
 }
 
-function extractThumbnail(html) {
+function extractThumbnailFromHtml(html) {
   const match = html.match(/<img[^>]+src="([^"]+)"/);
   return match ? match[1] : null;
 }
 
+// Tistory computes a representative "og:image" per post (the thumbnail the
+// user picked, or an auto-picked one) that doesn't always match the first
+// <img> in the RSS description, so read it straight off the post page.
+async function fetchOgImage(postUrl) {
+  try {
+    const res = await fetch(postUrl, { headers: FETCH_HEADERS });
+    if (!res.ok) return null;
+    const html = await res.text();
+    const match = html.match(/<meta property="og:image" content="([^"]+)"/);
+    return match ? match[1] : null;
+  } catch {
+    return null;
+  }
+}
+
 async function main() {
-  const res = await fetch(RSS_URL, {
-    headers: { 'User-Agent': 'Mozilla/5.0 (compatible; sallysooo-portfolio-sync/1.0)' },
-  });
+  const res = await fetch(RSS_URL, { headers: FETCH_HEADERS });
   if (!res.ok) {
     throw new Error(`Failed to fetch Tistory RSS: HTTP ${res.status}`);
   }
@@ -56,22 +70,25 @@ async function main() {
 
   const items = xml.match(/<item>[\s\S]*?<\/item>/g) || [];
 
-  const posts = items.map((item) => {
+  const posts = await Promise.all(items.map(async (item) => {
     const title = decodeEntities(decodeEntities(extractTag(item, 'title')));
     const link = extractTag(item, 'link');
     const category = decodeEntities(decodeEntities(extractTag(item, 'category')));
     const pubDate = extractTag(item, 'pubDate');
     const descriptionHtml = decodeEntities(extractTag(item, 'description'));
 
+    const thumbnail = (await fetchOgImage(link)) || extractThumbnailFromHtml(descriptionHtml);
+
     return {
       title,
       link,
       date: new Date(pubDate).toISOString().slice(0, 10),
       category: category || null,
-      thumbnail: extractThumbnail(descriptionHtml),
+      thumbnail,
       excerpt: toExcerpt(descriptionHtml),
     };
-  }).sort((a, b) => b.date.localeCompare(a.date));
+  }));
+  posts.sort((a, b) => b.date.localeCompare(a.date));
 
   await writeFile(OUTPUT_PATH, `${JSON.stringify({ posts }, null, 4)}\n`);
   console.log(`Wrote ${posts.length} tech blog posts to ${OUTPUT_PATH}`);
