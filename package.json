@@ -34,7 +34,8 @@
     "build": "vite build",
     "preview": "vite preview",
     "test": "vitest run",
-    "lint": "eslint src"
+    "lint": "eslint src",
+    "sync:tech-blog": "node scripts/sync-tech-blog.mjs"
   },
   "devDependencies": {
     "@emotion/react": "^11.13.3",

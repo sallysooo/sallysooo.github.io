@@ -4,12 +4,17 @@ import PropTypes from 'prop-types';
 import Header from './Header';
 import endpoints from '../constants/endpoints';
 import BlogCard from './blog/BlogCard';
+import TechPostCard from './blog/TechPostCard';
 import FallbackSpinner from './FallbackSpinner';
 import '../css/blog.css';
+
+const TABS = ['Blog', 'Tech'];
 
 function Blog(props) {
   const { header } = props;
   const [data, setData] = useState(null);
+  const [techData, setTechData] = useState(null);
+  const [activeTab, setActiveTab] = useState('Blog');
 
   useEffect(() => {
     fetch(endpoints.blog, {
@@ -18,26 +23,48 @@ function Blog(props) {
       .then((res) => res.json())
       .then((res) => setData(res))
       .catch((err) => err);
+
+    fetch(endpoints.techBlog, {
+      method: 'GET',
+    })
+      .then((res) => res.json())
+      .then((res) => setTechData(res))
+      .catch((err) => err);
   }, []);
 
   const sortedPosts = data?.posts
     ?.slice()
     .sort((a, b) => new Date(b.date) - new Date(a.date));
 
+  const isLoading = activeTab === 'Blog' ? !data : !techData;
+
   return (
     <>
       <Header title={header} />
-      {data ? (
-        <div className="section-content-container">
+      <div className="section-content-container">
+        <div className="projects-filter">
+          {TABS.map((tab) => (
+            <button
+              key={tab}
+              type="button"
+              className={`btn-pill ${activeTab === tab ? 'btn-accent' : 'btn-ghost'}`}
+              onClick={() => setActiveTab(tab)}
+            >
+              {tab}
+            </button>
+          ))}
+        </div>
+
+        {isLoading ? <FallbackSpinner /> : (
           <Fade triggerOnce>
             <div className="blog-grid">
-              {sortedPosts.map((post) => (
-                <BlogCard key={post.slug} post={post} />
-              ))}
+              {activeTab === 'Blog'
+                ? sortedPosts.map((post) => <BlogCard key={post.slug} post={post} />)
+                : techData.posts.map((post) => <TechPostCard key={post.link} post={post} />)}
             </div>
           </Fade>
-        </div>
-      ) : <FallbackSpinner />}
+        )}
+      </div>
     </>
   );
 }

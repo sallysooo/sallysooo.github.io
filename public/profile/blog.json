@@ -1,18 +1,11 @@
 {
     "posts": [
         {
-            "slug": "welcome",
-            "title": "Welcome to my blog",
-            "date": "2026-08-12",
-            "category": "General",
-            "contentFile": "/blog-content/welcome.md"
-        },
-        {
-            "slug": "placeholder-post",
-            "title": "A placeholder post",
-            "date": "2026-08-05",
-            "category": "General",
-            "contentFile": "/blog-content/placeholder-post.md"
+            "slug": "new-site-new-look",
+            "title": "A New Site, Rebuilt from Scratch",
+            "date": "2026-08-13",
+            "category": "Site Update",
+            "contentFile": "/blog-content/new-site-new-look.md"
         }
     ]
 }

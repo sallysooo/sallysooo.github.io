@@ -51,6 +51,7 @@
 
 .blog-card__body {
   padding-top: var(--space-4);
+  text-align: left;
 }
 
 .blog-card__category {
@@ -74,6 +75,17 @@
   display: block;
   font-size: 0.85rem;
   color: var(--text-muted);
+}
+
+.blog-card__excerpt {
+  margin: var(--space-3) 0 0;
+  color: var(--text-muted);
+  font-size: 0.9rem;
+  line-height: 1.6;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 
 /* Post detail page */
@@ -119,6 +131,7 @@
   margin: 0 auto;
   color: var(--text);
   line-height: 1.75;
+  text-align: left;
 }
 
 .blog-post__body :first-child {

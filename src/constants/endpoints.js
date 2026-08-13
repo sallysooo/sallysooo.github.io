@@ -9,6 +9,7 @@ const endpoints = {
   experiences: '/profile/experiences.json',
   projects: '/profile/projects.json',
   blog: '/profile/blog.json',
+  techBlog: '/profile/tech-blog.json',
 };
 
 export default endpoints;

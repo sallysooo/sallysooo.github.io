@@ -40,8 +40,34 @@ automatically on every push to `main`.
    (matches the `contentFile` path above).
 3. If you're using a cover image, drop it in `public/images/blog/`.
 
-The post automatically shows up on `/blog`, sorted newest-first by `date`, and gets
-its own page at `/blog/<slug>`.
+The post automatically shows up on the **Blog** tab of `/blog`, sorted newest-first by
+`date`, and gets its own page at `/blog/<slug>`.
+
+## The Tech tab (Tistory sync)
+
+The **Tech** tab on `/blog` mirrors the latest posts from the
+[Tistory tech blog](https://sallysooo.tistory.com/) — title, date, category, first
+image, and an excerpt, pulled from its public RSS feed. You never edit this by hand:
+
+- `scripts/sync-tech-blog.mjs` fetches the RSS feed and writes
+  `public/profile/tech-blog.json`.
+- `.github/workflows/sync-tech-blog.yml` runs that script automatically once a day
+  and pushes the result if anything changed, which in turn triggers the normal
+  deploy. So a new Tistory post shows up here within about a day, with nothing to do
+  on your end.
+- To pull the latest posts immediately instead of waiting for the daily run, either
+  trigger the "Sync tech blog" workflow manually from the
+  [Actions tab](https://github.com/sallysooo/sallysooo.github.io/actions), or run it
+  locally:
+  ```bash
+  npm run sync:tech-blog
+  git add public/profile/tech-blog.json
+  git commit -m "Sync tech blog posts"
+  git push origin main
+  ```
+
+Tistory's RSS feed only exposes the latest 10 posts, so that's the cap here too —
+older posts stay on the Tistory blog itself but won't appear in this tab.
 
 ## Deploying
 
