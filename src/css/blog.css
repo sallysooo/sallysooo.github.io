@@ -1,6 +1,19 @@
 /* Blog: card grid list + a dedicated full-page post view (Stablo's format,
    dev-portfolio's bento/theme tokens). */
 
+.blog-tabs {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+  margin-bottom: var(--space-6);
+}
+
+.blog-tabs .btn-pill {
+  font-size: 0.85rem;
+  padding: 0.5em 1.2em;
+}
+
 .blog-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));

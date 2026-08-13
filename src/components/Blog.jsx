@@ -42,7 +42,7 @@ function Blog(props) {
     <>
       <Header title={header} />
       <div className="section-content-container">
-        <div className="projects-filter">
+        <div className="blog-tabs">
           {TABS.map((tab) => (
             <button
               key={tab}
