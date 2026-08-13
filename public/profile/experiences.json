@@ -1,26 +1,38 @@
 {
     "experiences": [
         {
-            "title": "25th AI Research Member",
+            "title": "25th Data Analysis Member",
             "subtitle": "BOAZ",
             "link": "https://www.bigdataboaz.com/",
             "orgIcon": "/images/experience/BOAZ_logo.svg",
-            "dateText": "Since Jul 2025",
+            "dateText": "JUL 2025 – JUL 2026",
             "subActivities": [
                 {
-                    "title": "[ADV-project] HEART: Harm Estimation and Ranking of Traffic for Cache-Hit-Ratio Recovery in E-Commerce Logs",
+                    "title": "Data Analysis Sessions & Research Study",
+                    "description": [
+                        "Completed the one-year Data Analysis track, participating in weekly sessions on machine learning, deep learning, data analysis, and related computer science topics.",
+                        "Reviewed research papers, delivered technical presentations, and participated in peer-led study groups and discussions across diverse AI and data science topics."
+                    ],
+                    "images": [
+                        "/images/experience/boaz_1.jpg",
+                        "/images/experience/boaz_2.jpg",
+                        "/images/experience/boaz_3.jpg",
+                        "/images/experience/boaz_4.jpg"
+                    ]
+                },
+                {
+                    "title": "Projects",
+                    "description": [
+                        "[ADV-project] HEART: Harm Estimation and Ranking of Traffic for Cache-Hit-Ratio Recovery in E-Commerce Logs",
+                        "[Mini-project 2] LLM-Based OOD Detection in Sentiment Classification",
+                        "[Mini-project 1] TorchDocs: A PyTorch document-based RAG chatbot in CLI application"
+                    ],
                     "images": [
                         "/images/experience/boaz_conference.jpg",
                         "/images/experience/boaz_conference_1.jpg",
                         "/images/experience/boaz_conference_2.jpg",
                         "/images/experience/boaz_conference_3.jpg"
                     ]
-                },
-                {
-                    "title": "[Mini-project 2] LLM-Based OOD Detection in Sentiment Classification"
-                },
-                {
-                    "title": "[Mini-project 1] TorchDocs: A PyTorch document-based RAG chatbot in CLI application"
                 }
             ]
         },
@@ -33,45 +45,79 @@
             "dateText": "Since May 2025",
             "subActivities": [
                 {
-                    "title": "Real-time anomaly detection in automotive Ethernet",
+                    "title": "AI-driven Intrusion Detection for Automotive Ethernet",
                     "description": [
-                        "Working on real-time anomaly detection in automotive Ethernet traffic (IVN) using various deep learning techniques.",
+                        "Conducting research on AI-driven intrusion and anomaly detection for Automotive Ethernet, with a focus on unsupervised learning, robustness, and explainability.",
+                        "Reproducing and extending recent deep-learning IDS research, covering network-traffic preprocessing, sequence modeling, multi-seed evaluation, and cross-dataset experiments.",
                         "Advisor: Prof. Seonghoon Jeong."
                     ],
                     "images": [
+                        "/images/experience/snsec_lab.jpg",
+                        "/images/experience/snsec_lab_0.jpg",
                         "/images/experience/snsec_lab_1.jpg",
-                        "/images/experience/snsec_lab_2.jpg"
+                        "/images/experience/snsec_lab_2.jpg",
+                        "/images/experience/snsec_lab_3.jpg",
+                        "/images/experience/snsec_lab_4.jpg"
                     ]
                 }
             ]
         },
         {
-            "title": "Web Hacking Academic Director · Member",
+            "title": "Web Hacking Academic Lead · Member",
             "subtitle": "SISS (Sookmyung Information Security Study)",
             "link": "https://sissofsookmyung.vercel.app/",
             "orgIconLight": "/images/experience/siss_logo_light.png",
             "orgIconDark": "/images/experience/siss_logo_dark.png",
             "orgIconHeight": 44,
-            "dateText": "Since 2023",
+            "dateText": "SINCE MAY 2023",
             "subActivities": [
+                {
+                    "title": "Web Hacking Academic Leadership",
+                    "description": [
+                        "Served as the Web Hacking Academic Lead, designing the learning curriculum and guiding members through web security fundamentals and hands-on exercises.",
+                        "Led seminars, supported members through technical Q&A, and mentored their learning throughout the year."
+                    ],
+                    "images": [
+                        "/images/experience/SISS_crypto_seminar.jpg",
+                        "/images/experience/hcamp_web_lead.jpg",
+                        "/images/experience/my_web_members.jpg"
+                    ]
+                },
+                {
+                    "title": "Security Seminars & Study",
+                    "description": [
+                        "Participated in security seminars and peer-led study sessions across diverse cybersecurity topics.",
+                        "Collaborated with fellow members through technical discussions, hands-on practice, and knowledge sharing."
+                    ],
+                    "images": [
+                        "/images/experience/siss_study.jpg",
+                        "/images/experience/SISS_WSS.jpg",
+                        "/images/experience/SISS_WSS2.png",
+                        "/images/experience/siss_hspace.jpg",
+                        "/images/experience/codegate_1.jpg",
+                        "/images/experience/siss_mate.jpg"
+                    ]
+                },
                 {
                     "title": "POC Hacking Camp (27th – 31st)",
                     "link": "https://hackingcamp.org/",
                     "description": [
-                        "Created Web Hacking CTF challenges for the 29th/30th/31st POC Hacking Camp.",
-                        "Official staff member for 3 years."
+                        "Designed and authored Web Hacking CTF challenges for the 29th, 30th, and 31st POC Hacking Camp.",
+                        "Served as an official staff member for three consecutive years."
                     ],
                     "images": [
                         "/images/experience/27th_hcamp.jpg",
                         "/images/experience/28th_hcamp.jpg",
                         "/images/experience/29th_hcamp.png",
-                        "/images/experience/31st_hcamp.jpg"
+                        "/images/experience/31st_hcamp.jpg",
+                        "/images/experience/31st_hcamp_1.jpg",
+                        "/images/experience/SISS_in_hcamp.jpg"
                     ]
                 },
                 {
                     "title": "POC Conference 2024",
                     "description": [
-                        "Participated as an official staff member and the English host speaker."
+                        "Served as an official staff member and English-language MC for POC Conference 2024."
                     ],
                     "images": [
                         "/images/experience/poc2024.png",

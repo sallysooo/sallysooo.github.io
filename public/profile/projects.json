@@ -14,6 +14,7 @@
             "detailBody": "### 🚩 The 31st PoC Hacking Camp CTF — Misc Challenge\n\nDesigned and implemented an advanced Misc challenge, **'MATCHA w0r1d!'**, for a national-level Capture The Flag (CTF) competition hosted at the 31st PoC HackingCamp. Also worked as an official staff member and manager of 2 additional Web Security challenges during the camp.\n\nMy first challenge to receive only a single solve during the competition!",
             "gallery": [
                 "/images/projects/matcha_world.png",
+                "/images/projects/matcha_world_0.jpg",
                 "/images/projects/matcha_world_1.jpg",
                 "/images/projects/matcha_world_2.jpg"
             ],
@@ -152,7 +153,7 @@
                 "start": "2025-01-08",
                 "end": "2025-02-15"
             },
-            "image": "/images/projects/QI_startoff.jpg",
+            "image": "/images/projects/QI_presentation1.png",
             "bodyText": "Team leader for a used-car price prediction ML project — 3rd place at Qualcomm Institute Hackathon + KCC 2025 Honorable Mention.",
             "detailBody": "🏆 **UCSD Qualcomm Institute AI Hackathon — 3rd place**\n🏆 **KCC 2025 (Korea Computer Congress) — Honorable Mention Award**\n\nParticipated as team leader for a machine learning development project on **'Final Listing Price Prediction for Private Used Car Sellers'**, earning 3rd place at the 14th Qualcomm Institute Hackathon.\n\nWrote a first-author paper on this topic, *'Development of a Machine Learning-based Prediction Model for Used Car Listing Price in Germany'*, for KCC 2025 — receiving an Honorable Mention Award.\n\n[Read the school's interview article →](https://www.sookmyung.ac.kr/kr/news/award-news.do?mode=view&articleNo=90412)",
             "gallery": [
@@ -189,7 +190,7 @@
                 "start": "2026-03-07",
                 "end": "2026-06-13"
             },
-            "image": "/images/projects/reservia_1.png",
+            "image": "/images/projects/reservia_3.png",
             "bodyText": "AI reservation manager agent — 3rd place at the 2026 Upstage Low-Code AI Challenge Hackathon.",
             "detailBody": "🏆 **2026 Upstage Low-Code AI Challenge Hackathon — 3rd place**\n\nBuilt an AI reservation management agent for custom services, placing 3rd at the 2026 Upstage Low-Code AI Challenge Hackathon.",
             "gallery": [
@@ -302,12 +303,13 @@
         {
             "title": "ScholarLens",
             "category": "AI & Data Science",
-            "image": "/images/projects/scholarlens.jpg",
+            "image": "/images/projects/scholarLens.png",
             "bodyText": "A university course project — full description coming soon.",
             "detailBody": "**ScholarLens**\n\nA project built for a university course. Full write-up coming soon.",
             "gallery": [
-                "/images/projects/scholarlens.jpg",
-                "/images/projects/scholarlens2.jpg"
+                "/images/projects/scholarlens.png",
+                "/images/projects/scholarlens_1.jpg",
+                "/images/projects/scholarlens_2.jpg"
             ],
             "links": [
                 {
