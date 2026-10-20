@@ -4,7 +4,8 @@
 //
 // Checks: every public/profile/*.json parses, the keys each page relies on are
 // present, every blog post has a title and date, and every local image or file
-// path referenced from the content actually exists under public/.
+// path referenced from the content actually exists under public/, and
+// public/.nojekyll is in place.
 
 import fs from 'node:fs';
 import path from 'node:path';
@@ -79,6 +80,13 @@ export function checkContent() {
     if (!post.date) errors.push(`blog-content/${post.slug}.md: missing "date"`);
     if (post.date && Number.isNaN(Date.parse(post.date))) errors.push(`blog-content/${post.slug}.md: "date" is not a date (${post.date})`);
     note(`blog-content/${post.slug}.md`, post);
+  }
+
+  // Without it, GitHub Pages runs Jekyll over the site, which turns every
+  // blog post with front matter into an .html page and drops the .md file the
+  // Blog tab fetches.
+  if (!fs.existsSync(path.join(PUBLIC, '.nojekyll'))) {
+    errors.push('public/.nojekyll is missing (GitHub Pages would hide the blog posts)');
   }
 
   for (const [asset, where] of assets) {
