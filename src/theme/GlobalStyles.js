@@ -13,12 +13,13 @@ const GlobalStyles = createGlobalStyle`
     --accent: ${({ theme }) => theme.accentColor};
     --accent-2: ${({ theme }) => theme.accentColor2};
     --accent-soft: ${({ theme }) => theme.accentSoft};
+    --on-accent: ${({ theme }) => theme.onAccent};
     --surface: ${({ theme }) => theme.cardBackground};
     --surface-2: ${({ theme }) => theme.cardFooterBackground};
     --border: ${({ theme }) => theme.cardBorderColor};
     --navbar-bg: ${({ theme }) => theme.navbarBackground};
     --timeline-line: ${({ theme }) => theme.timelineLineColor};
-    --gradient: linear-gradient(135deg, var(--accent), var(--accent-2));
+    --gradient: linear-gradient(135deg, ${({ theme }) => theme.gradientStart}, var(--accent-2));
 
     /* Elevation */
     --shadow-sm: ${({ theme }) => theme.shadowSm};

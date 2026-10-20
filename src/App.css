@@ -88,7 +88,7 @@
 .tile--accent {
   background: var(--gradient);
   border-color: transparent;
-  color: #fff;
+  color: var(--on-accent);
 }
 
 /* Shared pill buttons + tile label (used across hero, projects, etc.) */
@@ -105,7 +105,7 @@
 
 .btn-accent {
   background: var(--gradient);
-  color: #fff;
+  color: var(--on-accent);
   border: none;
   box-shadow: var(--shadow-sm);
 }
@@ -113,7 +113,7 @@
 .btn-accent:hover {
   transform: translateY(-2px);
   box-shadow: var(--shadow-md);
-  color: #fff;
+  color: var(--on-accent);
 }
 
 .btn-ghost {

@@ -1,17 +1,82 @@
-// Bento, dark-first palette: a neutral page/surface ramp + a single indigo
-// accent (with a violet partner used only for gradients). Existing keys are
+// Bento, dark-first palette: a neutral page/surface ramp + a single pastel
+// accent (with a milkier partner used only for gradients). Existing keys are
 // preserved so every component keeps working; values are retuned for the look.
+
+// Accent palettes — switch the whole site's point colour by changing ACCENT.
+// In light mode the text-level accent is deeper so links stay readable on the
+// light background; fills (buttons, accent tiles) keep the pastel gradient.
+const ACCENTS = {
+  // The site's original indigo/violet look.
+  grape: {
+    light: {
+      accentColor: '#4f46e5',
+      accentColor2: '#7c3aed',
+      gradientStart: '#4f46e5',
+      onAccent: '#fff',
+      accentSoft: 'rgba(79, 70, 229, 0.12)',
+      glow1: 'rgba(79, 70, 229, 0.10)',
+      glow2: 'rgba(124, 58, 237, 0.08)',
+    },
+    dark: {
+      accentColor: '#818cf8',
+      accentColor2: '#c084fc',
+      gradientStart: '#818cf8',
+      onAccent: '#fff',
+      accentSoft: 'rgba(129, 140, 248, 0.14)',
+      glow1: 'rgba(99, 102, 241, 0.18)',
+      glow2: 'rgba(168, 85, 247, 0.12)',
+    },
+  },
+  strawberry: {
+    light: {
+      accentColor: '#ad4566',
+      accentColor2: '#fdb8c8',
+      gradientStart: '#ec8ca8',
+      onAccent: '#4a1d2b',
+      accentSoft: 'rgba(236, 140, 168, 0.18)',
+      glow1: 'rgba(236, 140, 168, 0.16)',
+      glow2: 'rgba(253, 184, 200, 0.14)',
+    },
+    dark: {
+      accentColor: '#f294ae',
+      accentColor2: '#fdb8c8',
+      gradientStart: '#f294ae',
+      onAccent: '#4a1d2b',
+      accentSoft: 'rgba(242, 148, 174, 0.15)',
+      glow1: 'rgba(242, 148, 174, 0.14)',
+      glow2: 'rgba(253, 184, 200, 0.07)',
+    },
+  },
+  matcha: {
+    light: {
+      accentColor: '#57773a',
+      accentColor2: '#ddebc9',
+      gradientStart: '#a8c98a',
+      onAccent: '#25361a',
+      accentSoft: 'rgba(168, 201, 138, 0.22)',
+      glow1: 'rgba(168, 201, 138, 0.18)',
+      glow2: 'rgba(221, 235, 201, 0.20)',
+    },
+    dark: {
+      accentColor: '#b5d29a',
+      accentColor2: '#ddebc9',
+      gradientStart: '#b5d29a',
+      onAccent: '#25361a',
+      accentSoft: 'rgba(181, 210, 154, 0.14)',
+      glow1: 'rgba(181, 210, 154, 0.12)',
+      glow2: 'rgba(221, 235, 201, 0.06)',
+    },
+  },
+};
+
+const ACCENT = 'grape';
 
 export const lightTheme = {
   isDark: false,
   background: '#f4f4f6',
   color: '#18181b',
   textMuted: '#52525b',
-  accentColor: '#4f46e5',
-  accentColor2: '#7c3aed',
-  accentSoft: 'rgba(79, 70, 229, 0.12)',
-  glow1: 'rgba(79, 70, 229, 0.10)',
-  glow2: 'rgba(124, 58, 237, 0.08)',
+  ...ACCENTS[ACCENT].light,
   chronoTheme: {
     cardBgColor: '#ffffff',
     cardForeColor: '#18181b',
@@ -39,11 +104,7 @@ export const darkTheme = {
   background: '#09090b',
   color: '#f4f4f5',
   textMuted: '#a1a1aa',
-  accentColor: '#818cf8',
-  accentColor2: '#c084fc',
-  accentSoft: 'rgba(129, 140, 248, 0.14)',
-  glow1: 'rgba(99, 102, 241, 0.18)',
-  glow2: 'rgba(168, 85, 247, 0.12)',
+  ...ACCENTS[ACCENT].dark,
   chronoTheme: {
     cardBgColor: '#141417',
     cardForeColor: '#f4f4f5',
