@@ -83,66 +83,32 @@
             ]
         },
         {
-            "title": "AERO reproduction",
+            "title": "X-SPUR: Explainable Unsupervised IDS for Automotive Ethernet 📄",
             "category": "Security",
             "field": "AI for security",
-            "dateRange": {
-                "start": "2025-05-14",
-                "end": "2025-08-11"
-            },
-            "image": "/images/projects/AERO.png",
-            "bodyText": "Reproducing the AERO paper for AI-driven security research.",
-            "detailBody": "**AERO reproduction**\n\nReproducing this paper's approach as part of ongoing research into AI-driven security and anomaly detection.",
-            "gallery": [
-                "/images/projects/AERO.png"
-            ],
-            "links": [
-                {
-                    "text": "GitHub",
-                    "href": "https://github.com/sallysooo/AERO"
-                }
-            ],
-            "tags": [
-                "Paper Reproduction",
-                "Anomaly Detection"
-            ]
-        },
-        {
-            "title": "Lens reproduction",
-            "category": "Security",
-            "field": "AI for security",
-            "dateRange": {
-                "start": "2025-10-27",
-                "end": "2026-01-11"
-            },
-            "image": "/images/projects/lens.png",
-            "bodyText": "Reproducing 'Lens: A Foundation Model for Network Traffic' — currently in a private repository.",
-            "detailBody": "**Lens: A Foundation Model for Network Traffic**\n\nReproducing this paper's approach to representation learning for network traffic analysis, as part of ongoing security ML research.\n\nCurrently in a private repository while the reproduction is in progress.",
-            "gallery": [
-                "/images/projects/lens.png"
-            ],
-            "links": [],
-            "tags": [
-                "Paper Reproduction",
-                "Network Traffic",
-                "Foundation Model"
-            ]
-        },
-        {
-            "title": "Explainable Unsupervised IDS for Automotive Ethernet",
-            "category": "Security",
             "dateRange": {
                 "start": "2025-09-01",
                 "end": "2026-07-12"
             },
-            "bodyText": "Paper submitted, currently awaiting review.",
-            "detailBody": "**Explainable Unsupervised IDS for Automotive Ethernet**\n\nResearch on an explainable, unsupervised intrusion detection system for automotive Ethernet traffic.\n\nPaper submitted and currently awaiting review.",
-            "gallery": [],
-            "links": [],
+            "image": "/images/projects/XSPUR_IEEE_Title_Closeup.png",
+            "bodyText": "First-author paper published in *IEEE Transactions on Industrial Informatics* (Q1, JIF 9.8).",
+            "detailBody": "📄 **Published in IEEE Transactions on Industrial Informatics (TII)** — Q1, top 6.8% in Automation & Control Systems (JCR), JIF 9.8\n\n**X-SPUR: Explainable Surprisal-Based Protocol-Aware Unsupervised Reasoning for Automotive Ethernet Intrusion Detection**\n\nAn explainable, unsupervised intrusion detection framework for automotive Ethernet networks. Instead of relying on labeled attack data or handcrafted features, X-SPUR represents raw packet fields as token sequences, learns normal network behavior from benign traffic through causal language modeling, and detects anomalies from token-level surprisal. It also provides intrinsic, field-level explanations of anomalous traffic — showing analysts not only *whether* something is unusual, but *where* the anomaly originates.\n\nFirst-author work conducted at SNSec Lab, Sookmyung Women's University, advised by Prof. Seonghoon Jeong.",
+            "gallery": [
+                "/images/projects/XSPUR_IEEE_Title_Closeup.png",
+                "/images/projects/x-spur_accepted.jpeg",
+                "/images/projects/x-spur_trials.jpeg"
+            ],
+            "links": [
+                {
+                    "text": "Paper",
+                    "href": "https://ieeexplore.ieee.org/document/11732073"
+                }
+            ],
             "tags": [
                 "IDS",
                 "Automotive Security",
-                "Unsupervised Learning"
+                "Unsupervised Learning",
+                "Explainable AI"
             ]
         },
         {
@@ -173,6 +139,10 @@
                 {
                     "text": "GitHub",
                     "href": "https://github.com/sallysooo/Used-Car-Price-Prediction"
+                },
+                {
+                    "text": "Paper",
+                    "href": "https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE12318841"
                 }
             ],
             "tags": [
@@ -219,8 +189,8 @@
                 "end": "2026-08-21"
             },
             "image": "/images/projects/HEART.png",
-            "bodyText": "BOAZ ADV-project — a harm-ranking approach for cache-pollution bot detection and cache-hit-ratio recovery. (IEEE BigData 2026 research)",
-            "detailBody": "**HEART: Harm Estimation and Ranking of Traffic for Cache-Hit-Ratio Recovery in E-Commerce Logs**\n\nA BOAZ advanced project researching cache-pollution bot detection and cache-hit-ratio recovery in e-commerce web logs, developed toward an IEEE BigData 2026 submission.",
+            "bodyText": "BOAZ ADV-project — a harm-ranking approach for cache-pollution bot detection and cache-hit-ratio recovery. Paper under review at IEEE BigData 2026.",
+            "detailBody": "**HEART: Harm Estimation and Ranking of Traffic for Cache-Hit-Ratio Recovery in E-Commerce Logs**\n\nA BOAZ advanced project researching cache-pollution bot detection and cache-hit-ratio recovery in e-commerce web logs, submitted to IEEE BigData 2026 and currently under review.",
             "gallery": [
                 "/images/projects/HEART.png"
             ],
@@ -238,87 +208,6 @@
                 "Data Mining",
                 "Bot Detection",
                 "Research"
-            ]
-        },
-        {
-            "title": "TorchDocs: A PyTorch document-based RAG chatbot in CLI application",
-            "category": "AI & Data Science",
-            "field": "NLP",
-            "dateRange": {
-                "start": "2025-08-01",
-                "end": "2025-08-28"
-            },
-            "image": "/images/projects/TorchDocs.png",
-            "bodyText": "A PyTorch-documentation RAG chatbot, built as a BOAZ mini-project.",
-            "detailBody": "**TorchDocs: A PyTorch document-based RAG chatbot in CLI application**\n\nA BOAZ mini-project — a retrieval-augmented generation (RAG) chatbot over PyTorch documentation, built as a CLI application.",
-            "gallery": [
-                "/images/projects/TorchDocs.png"
-            ],
-            "links": [
-                {
-                    "text": "GitHub",
-                    "href": "https://github.com/BOAZ-mini-1/TorchDocs"
-                },
-                {
-                    "text": "Slides",
-                    "href": "https://www.canva.com/design/DAGw-tVP--U/KnoB4CYAS05HRN51nQXFWg/edit?utm_content=DAGw-tVP--U&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"
-                }
-            ],
-            "tags": [
-                "NLP",
-                "RAG",
-                "LLM"
-            ]
-        },
-        {
-            "title": "LLM-Based OOD Detection in Sentiment Classification",
-            "category": "AI & Data Science",
-            "field": "NLP",
-            "dateRange": {
-                "start": "2025-11-06",
-                "end": "2025-12-04"
-            },
-            "image": "/images/projects/OOD.png",
-            "bodyText": "Out-of-distribution detection for sentiment classification using LLMs — a BOAZ mini-project.",
-            "detailBody": "**LLM-Based OOD Detection in Sentiment Classification**\n\nA BOAZ mini-project exploring out-of-distribution (OOD) detection techniques for sentiment classification using large language models.",
-            "gallery": [
-                "/images/projects/OOD.png"
-            ],
-            "links": [
-                {
-                    "text": "GitHub",
-                    "href": "https://github.com/BOAZ-mini-2/OOD-Sentiment-LLM"
-                },
-                {
-                    "text": "Slides",
-                    "href": "https://www.canva.com/design/DAG6LRzuWls/PraQVyp2TdGcjYZU20CWWA/edit?ui=eyJEIjp7IlAiOnsiQiI6ZmFsc2V9fX0"
-                }
-            ],
-            "tags": [
-                "NLP",
-                "OOD Detection",
-                "LLM"
-            ]
-        },
-        {
-            "title": "ScholarLens",
-            "category": "AI & Data Science",
-            "image": "/images/projects/scholarLens.png",
-            "bodyText": "A university course project — full description coming soon.",
-            "detailBody": "**ScholarLens**\n\nA project built for a university course. Full write-up coming soon.",
-            "gallery": [
-                "/images/projects/scholarlens.png",
-                "/images/projects/scholarlens_1.jpg",
-                "/images/projects/scholarlens_2.jpg"
-            ],
-            "links": [
-                {
-                    "text": "GitHub",
-                    "href": "https://github.com/sallysooo/ScholarLens"
-                }
-            ],
-            "tags": [
-                "Course Project"
             ]
         }
     ]

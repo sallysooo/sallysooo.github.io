@@ -49,6 +49,7 @@
                     "description": [
                         "Conducting research on AI-driven intrusion and anomaly detection for Automotive Ethernet, with a focus on unsupervised learning, robustness, and explainability.",
                         "Reproducing and extending recent deep-learning IDS research, covering network-traffic preprocessing, sequence modeling, multi-seed evaluation, and cross-dataset experiments.",
+                        "Published first-author paper [**X-SPUR**](https://ieeexplore.ieee.org/document/11732073) in *IEEE Transactions on Industrial Informatics* (Q1, JIF 9.8).",
                         "Advisor: Prof. Seonghoon Jeong."
                     ],
                     "images": [
