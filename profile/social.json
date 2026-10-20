@@ -15,6 +15,14 @@
         {
             "network": "email",
             "href": "mailto:jisugim168@gmail.com"
+        },
+        {
+            "network": "googlescholar",
+            "href": "https://scholar.google.com/citations?user=6aItteMAAAAJ"
+        },
+        {
+            "network": "orcid",
+            "href": "https://orcid.org/0009-0007-6075-2385"
         }
     ]
 }
