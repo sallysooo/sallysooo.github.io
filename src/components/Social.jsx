@@ -2,6 +2,7 @@ import React, { useEffect, useState, useContext } from 'react';
 import { SocialIcon } from 'react-social-icons';
 import { ThemeContext } from 'styled-components';
 import endpoints from '../constants/endpoints';
+import './customSocialIcons';
 
 const styles = {
   iconStyle: {
