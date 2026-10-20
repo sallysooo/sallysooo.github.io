@@ -1,8 +1,8 @@
 # sallysooo.github.io
 
-My personal site, live at [sallysooo.com](https://sallysooo.com) — about me, experience, projects, and a blog.
+My personal site, live at [sallysooo.com](https://sallysooo.com) — about me, publications, experience, projects, and a blog.
 
-Built with React + Vite. Content (About/Experience/Projects/Blog text, images, links) lives in `public/profile/*.json` and is fetched at runtime, so most updates never touch component code. See [CONTENT_GUIDE.md](CONTENT_GUIDE.md) for what to edit, how to run it locally, and how to deploy.
+Built with React + Vite. Content (About/Publications/Experience/Projects/Blog text, images, links) lives in `public/profile/*.json` and is fetched at runtime, so most updates never touch component code. See [CONTENT_GUIDE.md](CONTENT_GUIDE.md) for what to edit, how to run it locally, and how to deploy.
 
 ## Credits
 

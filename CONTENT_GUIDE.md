@@ -14,6 +14,7 @@ automatically on every push to `main`.
 | Skills (Main Stacks icons, Languages) — shown on About page | `public/profile/skills.json` |
 | Education (degree, GPA, school) — shown on About page | `public/profile/education.json` |
 | Experience (SISS / SNSec Lab / BOAZ timeline, sub-activities, photos) | `public/profile/experiences.json` (+ photos in `public/images/experience/`) |
+| Publications (papers, grouped by year on `/publications`) | `public/profile/publications.json` (+ images in `public/images/publications/`) — see below |
 | Projects (all cards + modal detail content) | `public/profile/projects.json` (+ photos in `public/images/projects/`) |
 | Social links (LinkedIn/GitHub/blog/email icons) | `public/profile/social.json` |
 | Nav bar items / order | `public/profile/navbar.json` |
@@ -21,6 +22,40 @@ automatically on every push to `main`.
 | Resume | Drop the actual PDF at `public/resume.pdf` (exact filename — the nav link already points there, nothing else to change) |
 | Terminal easter egg (banner, commands, social links inside it) | `tools/webshell/config.json` and `tools/webshell/src/` — see `tools/webshell/REBUILD.md` for the rebuild step this needs |
 | Favicon | `index.html`, the `<link rel="icon">` tag |
+
+## Adding a publication
+
+Add an entry to `public/profile/publications.json`'s `publications` array. Entries
+are grouped by `year` (newest first); within a year they keep the order you write
+them in the file.
+
+```json
+{
+  "year": 2027,
+  "type": "Conference",
+  "venue": "ACM Conference on Computer and Communications Security (CCS 2027)",
+  "venueDetail": "pp. 1–15",
+  "title": "Paper Title",
+  "authors": ["Jisoo Kim", "Co Author"],
+  "highlights": ["First Author"],
+  "tldr": "One or two sentences (Markdown OK).",
+  "abstract": "Full abstract — shown behind an expandable 'Abstract' toggle.",
+  "image": "/images/publications/my-figure.png",
+  "links": [{ "text": "Paper", "href": "https://..." }],
+  "bibtex": "@inproceedings{...}"
+}
+```
+
+- Only `year`, `type`, `venue`, and `title` are required;
+  everything else is shown only when present.
+- Only list papers that are actually published — work still under review stays
+  in Projects until it's out.
+- Names listed in the top-level `self` array are bolded in author lists.
+- A Journal / Conference / … filter appears automatically once there are two or
+  more different `type` values.
+- `imagePosition` (e.g. `"left top"`) picks which part of a wide/tall `image` the
+  cropped thumbnail shows; clicking the thumbnail opens the full image.
+- `bibtex` adds a "BibTeX" button that copies it to the clipboard.
 
 ## Writing a new blog post
 

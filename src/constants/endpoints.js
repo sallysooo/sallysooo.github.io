@@ -8,6 +8,7 @@ const endpoints = {
   education: '/profile/education.json',
   experiences: '/profile/experiences.json',
   projects: '/profile/projects.json',
+  publications: '/profile/publications.json',
   blog: '/profile/blog.json',
   techBlog: '/profile/tech-blog.json',
 };

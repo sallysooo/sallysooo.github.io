@@ -6,6 +6,11 @@
             "headerTitle": "About"
         },
         {
+            "component": "Publications",
+            "path": "/publications",
+            "headerTitle": "Publications"
+        },
+        {
             "component": "Experience",
             "path": "/experience",
             "headerTitle": "Experience"

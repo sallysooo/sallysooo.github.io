@@ -11,7 +11,6 @@ import '../css/projects.css';
 const Projects = (props) => {
   const { header } = props;
   const [data, setData] = useState(null);
-  const [showMore, setShowMore] = useState(false);
   const [activeCategory, setActiveCategory] = useState('All');
   const [activeProject, setActiveProject] = useState(null);
 
@@ -46,8 +45,6 @@ const Projects = (props) => {
     return [...pinned, ...rest];
   }, [data, activeCategory]);
 
-  const numberOfItems = showMore ? filteredProjects.length : 6;
-
   return (
     <>
       <Header title={header} />
@@ -62,10 +59,7 @@ const Projects = (props) => {
                   className={`btn-pill ${
                     activeCategory === category ? 'btn-accent' : 'btn-ghost'
                   }`}
-                  onClick={() => {
-                    setActiveCategory(category);
-                    setShowMore(false);
-                  }}
+                  onClick={() => setActiveCategory(category)}
                 >
                   {category}
                 </button>
@@ -75,7 +69,7 @@ const Projects = (props) => {
 
           <Fade triggerOnce>
             <div className="bento">
-              {filteredProjects.slice(0, numberOfItems).map((project, index) => (
+              {filteredProjects.map((project, index) => (
                 <ProjectCard
                   key={project.title}
                   project={project}
@@ -85,18 +79,6 @@ const Projects = (props) => {
               ))}
             </div>
           </Fade>
-
-          {!showMore && filteredProjects.length > numberOfItems && (
-            <div className="projects-more">
-              <button
-                type="button"
-                className="btn-pill btn-ghost"
-                onClick={() => setShowMore(true)}
-              >
-                Show more
-              </button>
-            </div>
-          )}
         </div>
       ) : <FallbackSpinner /> }
       {activeProject && (
