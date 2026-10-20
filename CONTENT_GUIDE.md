@@ -9,6 +9,7 @@ automatically on every push to `main`.
 
 | What you want to change | File(s) to edit |
 | --- | --- |
+| Anything below, from your phone | **https://sallysooo.com/admin/** — see [Editing from your phone](#editing-from-your-phone-admin) |
 | Home page (name, typewriter roles, status line) | `public/profile/home.json` |
 | About bio text, profile photo | `public/profile/about.json` (+ photo in `public/images/about/`) |
 | Skills (Main Stacks icons, Languages) — shown on About page | `public/profile/skills.json` |
@@ -57,26 +58,65 @@ them in the file.
   cropped thumbnail shows; clicking the thumbnail opens the full image.
 - `bibtex` adds a "BibTeX" button that copies it to the clipboard.
 
+## Editing from your phone (/admin)
+
+The easiest way to update the site — from a phone or any browser — is the
+admin page at **https://sallysooo.com/admin/**. It's
+[Sveltia CMS](https://sveltiacms.app/): forms for the Blog, Projects,
+Experience, Publications, and Home/About content, with photo upload. Saving
+commits the change to this repo, and the normal deploy publishes it about 1–2
+minutes later.
+
+- **Signing in** uses a GitHub personal access token that only has access to
+  this repository (`auth_methods: [token]` in the config). Create it once, paste
+  it into the login screen, and the browser remembers it. If a device is lost,
+  delete the token on GitHub (Settings → Developer settings → Personal access
+  tokens) and nobody can use it any more.
+- **Photos** are resized to at most 2048px and converted to WebP on upload, and
+  renamed to `YYYYMMDD-<random id>.webp`, so large phone photos are fine.
+- The configuration lives in `public/admin/config.yml`. Its field names must
+  match the JSON keys the pages read; if you add a new key to a JSON file by
+  hand, add it there too or the CMS form won't show it (it keeps the value
+  either way).
+
+Editing the files directly (below) still works exactly as before — both ways
+end up as commits on `main`.
+
 ## Writing a new blog post
 
-1. Add an entry to `public/profile/blog.json`'s `posts` array:
-   ```json
-   {
-     "slug": "my-new-post",
-     "title": "My New Post",
-     "date": "2026-09-01",
-     "category": "General",
-     "coverImage": "/images/blog/my-photo.jpg",
-     "contentFile": "/blog-content/my-new-post.md"
-   }
-   ```
-   `coverImage` is optional — omit it and the card shows a 📝 placeholder instead.
-2. Write the post body as plain Markdown at `public/blog-content/my-new-post.md`
-   (matches the `contentFile` path above).
-3. If you're using a cover image, drop it in `public/images/blog/`.
+Each post is one Markdown file in `public/blog-content/`. Its file name is the
+post's URL (`public/blog-content/my-new-post.md` → `/blog/my-new-post`), and its
+details go in a front matter block at the top:
 
-The post automatically shows up on the **Blog** tab of `/blog`, sorted newest-first by
-`date`, and gets its own page at `/blog/<slug>`.
+```markdown
+---
+title: My New Post
+date: 2026-09-01
+category: General
+coverImage: /images/blog/my-photo.jpg
+---
+
+The post body, in plain Markdown.
+```
+
+- `title` and `date` are required; `category` and `coverImage` are optional
+  (without a cover image the card shows a 📝 placeholder).
+- Add `draft: true` to keep a post in the repo without showing it on the site.
+- Put images in `public/images/blog/`.
+
+There's no list to update by hand: the Blog tab's list (`/profile/blog.json`) is
+generated from these files at build time by `scripts/blog-index.mjs`, sorted
+newest-first by `date`.
+
+## Content check before every deploy
+
+`npm run build` first runs `npm run check:content` (`scripts/check-content.mjs`),
+which fails the build if a profile JSON file is invalid, a project, experience,
+or publication is missing a required field, a blog post has no valid date, or
+any `/images/...` path in the content points at a file that doesn't exist. A
+failed check means the deploy is skipped and the previous version of the site
+stays live — GitHub emails you about the failed run, and the error message says
+which file and field to fix.
 
 ## The Tech tab (Tistory sync)
 

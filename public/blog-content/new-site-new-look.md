@@ -1,3 +1,9 @@
+---
+title: A New Site, Rebuilt from Scratch
+date: 2026-08-13
+category: Site Update
+---
+
 I finally got around to rebuilding this site from scratch, and it's live.
 
 The old version ran on Jekyll, using the [al-folio](https://github.com/alshedivat/al-folio) theme. It served me well for a long time, but I'd outgrown what it could easily do. This time I rebuilt everything on React and Vite instead, which gave me a lot more room to shape the site the way I actually wanted it to feel.

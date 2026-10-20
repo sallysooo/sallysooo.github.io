@@ -5,6 +5,10 @@ import endpoints from '../constants/endpoints';
 import FallbackSpinner from './FallbackSpinner';
 import '../css/blog.css';
 
+// Posts start with a YAML front matter block holding their metadata (already
+// in blog.json), so drop it before rendering the body.
+const FRONT_MATTER = /^---\r?\n[\s\S]*?\r?\n---\r?\n?/;
+
 function formatDate(iso) {
   return new Date(iso).toLocaleDateString('en-US', {
     year: 'numeric',
@@ -38,7 +42,7 @@ function BlogPost() {
         const text = await bodyRes.text();
         if (!ignore) {
           setPost(match);
-          setBody(text);
+          setBody(text.replace(FRONT_MATTER, ''));
         }
       } catch (err) {
         if (!ignore) setNotFound(true);

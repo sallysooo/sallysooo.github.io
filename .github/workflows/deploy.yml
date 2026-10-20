@@ -9,6 +9,12 @@ on:
 permissions:
   contents: write
 
+# Edits from /admin (and the daily tech-blog sync) can land seconds apart;
+# run deploys one at a time so an older build never overwrites a newer one.
+concurrency:
+  group: deploy-site
+  cancel-in-progress: false
+
 jobs:
   deploy:
     runs-on: ubuntu-latest

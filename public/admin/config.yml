@@ -1,0 +1,281 @@
+# yaml-language-server: $schema=https://unpkg.com/@sveltia/cms/schema/sveltia-cms.json
+#
+# Sveltia CMS configuration for sallysooo.com/admin.
+# Every save commits straight to `main`, which triggers the normal deploy
+# (.github/workflows/deploy.yml) — the change is live about 1–2 minutes later.
+# Field names below must match the keys the React components read from
+# public/profile/*.json; see CONTENT_GUIDE.md.
+
+backend:
+  name: github
+  repo: sallysooo/sallysooo.github.io
+  branch: main
+  # Sign in with a GitHub personal access token only. ("Sign In with GitHub"
+  # would need a separate OAuth relay server, which this site doesn't run.)
+  auth_methods: [token]
+
+site_url: https://sallysooo.com
+display_url: https://sallysooo.com
+
+# Fallback location for uploads that don't set their own folder below.
+media_folder: /public/images/uploads
+public_folder: /images/uploads
+
+media_libraries:
+  all:
+    # Phone photos arrive as IMG_1234.jpg; give them unique, URL-safe names.
+    filename_template: '{{year}}{{month}}{{day}}-{{uuid_short}}'
+  default:
+    config:
+      max_file_size: 26214400 # 25 MB, before the conversion below
+      transformations:
+        # Resize big photos and convert them to WebP on upload, so a 5 MB
+        # phone photo lands in the repo as a few hundred KB.
+        raster_image:
+          format: webp
+          quality: 85
+          width: 2048
+          height: 2048
+
+output:
+  # Leave empty optional fields out of the JSON instead of writing "" / [],
+  # matching how the files are written by hand.
+  omit_empty_optional_fields: true
+  json:
+    indent_size: 4
+
+slug:
+  encoding: ascii
+  clean_accents: true
+  timezone: local
+
+collections:
+  # ---------------------------------------------------------------- Blog
+  - name: blog
+    label: 블로그 (Blog)
+    label_singular: 블로그 글
+    description: Blog 탭의 글. 저장하면 1~2분 뒤 sallysooo.com/blog 에 올라가요.
+    folder: /public/blog-content
+    extension: md
+    format: frontmatter
+    create: true
+    delete: true
+    # Titles are often Korean, so name files by date + a short random id
+    # (e.g. 2026-10-21-4fc0917c.md → sallysooo.com/blog/2026-10-21-4fc0917c).
+    slug:
+      template: '{{year}}-{{month}}-{{day}}-{{uuid_shorter}}'
+      editable: false
+    media_folder: /public/images/blog
+    public_folder: /images/blog
+    summary: '{{title}} · {{date}}'
+    sortable_fields: [date, title]
+    fields:
+      - { name: title, label: 제목, widget: string }
+      - name: date
+        label: 날짜
+        widget: datetime
+        time_format: false
+        default: '{{now}}'
+      - { name: category, label: 카테고리, widget: string, required: false, hint: '예: Conference, Daily, Research' }
+      - { name: coverImage, label: 대표 사진, widget: image, required: false, hint: 블로그 목록 카드에 보이는 사진 }
+      - name: draft
+        label: 임시저장 (사이트에 안 보이게)
+        widget: boolean
+        default: false
+        required: false
+        hint: 켜두면 저장만 되고 사이트에는 올라가지 않아요.
+      - { name: body, label: 본문, widget: markdown }
+
+  # ------------------------------------------------------------ Projects
+  - name: projects
+    label: 프로젝트 (Projects)
+    files:
+      - name: projects
+        label: 프로젝트 목록
+        file: /public/profile/projects.json
+        fields:
+          - name: projects
+            label: 프로젝트
+            label_singular: 프로젝트
+            widget: list
+            collapsed: true
+            add_to_top: true
+            summary: '{{title}}'
+            thumbnail: image
+            fields:
+              - { name: title, label: 제목, widget: string }
+              - { name: pinned, label: 맨 앞에 고정, widget: boolean, default: false, required: false }
+              - name: category
+                label: 분류
+                widget: select
+                options: [Security, AI & Data Science]
+              - { name: field, label: 분야 태그, widget: string, required: false, hint: '모달에 보이는 분야, 예: AI for security' }
+              - name: dateRange
+                label: 기간
+                widget: object
+                required: false
+                fields:
+                  - { name: start, label: 시작일, widget: datetime, time_format: false, required: false }
+                  - { name: end, label: 종료일, widget: datetime, time_format: false, required: false, hint: 목록은 종료일 기준 최신순으로 정렬돼요. }
+              - name: image
+                label: 대표 사진
+                widget: image
+                required: false
+                media_folder: /public/images/projects
+                public_folder: /images/projects
+              - { name: bodyText, label: 카드 요약 (한두 줄), widget: text }
+              - { name: detailBody, label: 상세 설명 (카드를 눌렀을 때), widget: markdown, required: false }
+              - name: gallery
+                label: 갤러리 사진
+                widget: image
+                multiple: true
+                required: false
+                media_folder: /public/images/projects
+                public_folder: /images/projects
+              - name: links
+                label: 링크
+                widget: list
+                required: false
+                summary: '{{text}}'
+                fields:
+                  - { name: text, label: 버튼 이름, widget: string, hint: '예: GitHub, Paper, Slides' }
+                  - { name: href, label: 주소 (URL), widget: string }
+              - { name: tags, label: 태그, widget: list, required: false }
+
+  # ---------------------------------------------------------- Experience
+  - name: experience
+    label: 경력·활동 (Experience)
+    files:
+      - name: experiences
+        label: 경력·활동 목록
+        file: /public/profile/experiences.json
+        fields:
+          - name: experiences
+            label: 활동
+            label_singular: 활동
+            widget: list
+            collapsed: true
+            add_to_top: true
+            summary: '{{subtitle}} — {{title}}'
+            fields:
+              - { name: title, label: 역할, widget: string, hint: '예: Undergraduate Research Intern' }
+              - { name: subtitle, label: 기관·단체 이름, widget: string }
+              - { name: link, label: 기관 홈페이지, widget: string, required: false }
+              - { name: dateText, label: 기간 표시, widget: string, hint: '예: Since May 2025, JUL 2025 – JUL 2026' }
+              - { name: workType, label: 근무 형태, widget: string, required: false }
+              - name: orgIcon
+                label: 로고
+                widget: image
+                required: false
+                media_folder: /public/images/experience
+                public_folder: /images/experience
+              - name: orgIconLight
+                label: 로고 (라이트 모드용)
+                widget: image
+                required: false
+                hint: 다크/라이트 모드에서 로고를 다르게 보여줄 때만 채우세요.
+                media_folder: /public/images/experience
+                public_folder: /images/experience
+              - name: orgIconDark
+                label: 로고 (다크 모드용)
+                widget: image
+                required: false
+                media_folder: /public/images/experience
+                public_folder: /images/experience
+              - { name: orgIconHeight, label: 로고 높이 (px), widget: number, value_type: int, required: false }
+              - name: subActivities
+                label: 세부 활동
+                label_singular: 세부 활동
+                widget: list
+                required: false
+                collapsed: true
+                summary: '{{title}}'
+                fields:
+                  - { name: title, label: 제목, widget: string }
+                  - { name: link, label: 링크, widget: string, required: false }
+                  - { name: description, label: 설명 (한 줄씩), widget: list, required: false }
+                  - name: images
+                    label: 사진
+                    widget: image
+                    multiple: true
+                    required: false
+                    media_folder: /public/images/experience
+                    public_folder: /images/experience
+                  - name: image
+                    label: 큰 사진 1장 (선택)
+                    widget: image
+                    required: false
+                    media_folder: /public/images/experience
+                    public_folder: /images/experience
+              - { name: workDescription, label: 설명 (세부 활동이 없을 때), widget: list, required: false }
+
+  # -------------------------------------------------------- Publications
+  - name: publications
+    label: 논문 (Publications)
+    files:
+      - name: publications
+        label: 논문 목록
+        file: /public/profile/publications.json
+        fields:
+          - { name: self, label: 굵게 표시할 내 이름, widget: list }
+          - name: publications
+            label: 논문
+            label_singular: 논문
+            widget: list
+            collapsed: true
+            add_to_top: true
+            summary: '{{year}} · {{title}}'
+            thumbnail: image
+            fields:
+              - { name: year, label: 연도, widget: number, value_type: int }
+              - name: type
+                label: 유형
+                widget: select
+                options: [Journal, Conference, Domestic Conference, Workshop, Preprint]
+              - { name: venue, label: 저널·학회 이름, widget: string }
+              - { name: venueDetail, label: 권·호·쪽수 등, widget: string, required: false }
+              - { name: title, label: 제목, widget: string }
+              - { name: titleAlt, label: 다른 언어 제목, widget: string, required: false }
+              - { name: authors, label: 저자 (순서대로), widget: list }
+              - { name: highlights, label: 하이라이트, widget: list, required: false, hint: '예: JIF 9.8, 🏆 Best Paper' }
+              - { name: tldr, label: TL;DR, widget: text, required: false }
+              - { name: abstract, label: Abstract, widget: text, required: false }
+              - name: image
+                label: 썸네일 사진
+                widget: image
+                required: false
+                media_folder: /public/images/publications
+                public_folder: /images/publications
+              - { name: imagePosition, label: 썸네일 위치, widget: string, required: false, hint: '사진의 어느 부분을 보여줄지, 예: left top' }
+              - name: links
+                label: 링크
+                widget: list
+                required: false
+                summary: '{{text}}'
+                fields:
+                  - { name: text, label: 버튼 이름, widget: string, hint: '예: Paper, DOI, Code' }
+                  - { name: href, label: 주소 (URL), widget: string }
+              - { name: bibtex, label: BibTeX, widget: text, required: false }
+
+  # --------------------------------------------------------- Home / About
+  - name: profile
+    label: 홈·소개 (Home / About)
+    files:
+      - name: home
+        label: 홈 화면
+        file: /public/profile/home.json
+        fields:
+          - { name: name, label: 이름, widget: string }
+          - { name: roles, label: 타자 효과로 바뀌는 문구, widget: list, hint: '"I''m" 뒤에 붙어요. 예: a Security Researcher' }
+          - { name: status, label: 상단 상태 문구, widget: string, required: false }
+      - name: about
+        label: 소개 (About)
+        file: /public/profile/about.json
+        fields:
+          - { name: about, label: 소개글, widget: markdown }
+          - name: imageSource
+            label: 프로필 사진
+            widget: image
+            required: false
+            media_folder: /public/images/about
+            public_folder: /images/about
