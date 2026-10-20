@@ -1,6 +1,14 @@
 {
   "posts": [
     {
+      "slug": "2026-10-20-ffcdfb36",
+      "title": "Test post for new CMS function",
+      "date": "2026-10-20",
+      "category": "Daily",
+      "coverImage": "/images/blog/20250703_085126.jpg",
+      "contentFile": "/blog-content/2026-10-20-ffcdfb36.md"
+    },
+    {
       "slug": "new-site-new-look",
       "title": "A New Site, Rebuilt from Scratch",
       "date": "2026-08-13",
