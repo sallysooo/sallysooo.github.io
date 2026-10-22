@@ -23,7 +23,7 @@
                 {
                     "title": "Projects",
                     "description": [
-                        "[ADV-project] HEART: Harm Estimation and Ranking of Traffic for Cache-Hit-Ratio Recovery in E-Commerce Logs",
+                        "[ADV-project] HEART: Harm Estimation and Ranking of Traffic for Cache-Hit-Ratio Recovery in E-Commerce Logs (accepted as a regular paper at *IEEE BigData 2026*)",
                         "[Mini-project 2] LLM-Based OOD Detection in Sentiment Classification",
                         "[Mini-project 1] TorchDocs: A PyTorch document-based RAG chatbot in CLI application"
                     ],

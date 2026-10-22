@@ -5,6 +5,26 @@
     "publications": [
         {
             "year": 2026,
+            "type": "Conference",
+            "venue": "2026 IEEE International Conference on Big Data (IEEE BigData 2026)",
+            "venueDetail": "Regular Paper, to appear",
+            "title": "Beyond Bot Labels: Retrospective Consequence-Grounded Ranking of Attributed Cache Harm in E-Commerce Logs",
+            "authors": [
+                "Jisoo Kim",
+                "Youngwoo Seo",
+                "Seonghoon Jeong"
+            ],
+            "highlights": [
+                "Acceptance Rate 19.4% (203/1,046)",
+                "KIISE Excellent Conference"
+            ],
+            "tldr": "Instead of asking *which sessions are bots*, this work ranks e-commerce sessions by the cache harm they actually cause. Each shopper's eviction-induced miss is charged to the session that evicted the object, and a behavioral model learns this target without User-Agent labels. On a 12.7M-request trace, the top 1% of sessions carry 48.8% of the harm, and the ranker reaches 93% of a User-Agent baseline's cache-hit-ratio gain with 47× fewer sessions.",
+            "abstract": "Web caches reduce origin load and latency, but automated traffic can either warm them or evict objects shoppers reuse, lowering the cache hit ratio (CHR). Existing bot defenses generally infer automation from User-Agent (UA) strings or behavior rather than identify sessions that impose cross-session cache harm. We instead formulate the task as ranking sessions by eviction damage and propose consequence-grounded session ranking. A single chronological replay attributes each eviction-induced miss by a protected shopping session (a victim) to the session whose insertion last evicted the object. A behavioral model predicts the target from session behavior alone. Selected sessions bypass the cache but remain origin-served. In a controlled check of 539 non-victim sessions selected across harm levels, attribution order tracks victim-hit changes after removal (Spearman correlation 0.80). On a 12.7-million-request real trace, the top 1% of sessions carry 48.8% of attributed harm. Sessions without bot tags contribute 49.1% of this tier's harm. At the 20% request-volume target, the default conditional CHR difference reaches 93% of the UA baseline, which selects 47 times as many sessions. Six training seeds show little variation. This comparison conditions on the victims that remain, so we also report victim bypass. Local replay and retraining on a second store reproduce harm concentration and a top tier dominated by sessions without bot tags. These results establish attributed cross-session harm as an outcome-based target for retrospective cache audits and selective intervention design.",
+            "image": "/images/publications/BigData2026_Figure1.png",
+            "bibtex": "@inproceedings{kim2026beyondbotlabels,\n  author    = {Kim, Jisoo and Seo, Youngwoo and Jeong, Seonghoon},\n  title     = {Beyond Bot Labels: Retrospective Consequence-Grounded Ranking of Attributed Cache Harm in E-Commerce Logs},\n  booktitle = {Proceedings of the IEEE International Conference on Big Data (BigData)},\n  year      = {2026},\n  note      = {To appear}\n}"
+        },
+        {
+            "year": 2026,
             "type": "Journal",
             "venue": "IEEE Transactions on Industrial Informatics",
             "venueDetail": "Early Access, pp. 1–12, Oct. 2026",
@@ -17,9 +37,9 @@
                 "Q1 · Top 6.8% (JCR)",
                 "JIF 9.8"
             ],
-            "tldr": "An explainable, unsupervised IDS for automotive Ethernet that represents raw packet fields as token sequences, learns benign traffic through causal language modeling, and detects anomalies from per-token surprisal — with intrinsic, field-level explanations of *where* an anomaly originates.",
+            "tldr": "An explainable, unsupervised IDS for automotive Ethernet. It represents raw packet fields as token sequences, learns benign traffic through causal language modeling, and flags anomalies by per-token surprisal. Because the score is computed field by field, it also shows *where* in a packet an anomaly originates.",
             "abstract": "Automotive Ethernet carries heterogeneous multiprotocol traffic in modern in-vehicle networks, where labeled attack data are rarely available and the strongest prior unsupervised detector still relies on handcrafted traffic features. This article presents explainable surprisal-based protocol-aware unsupervised reasoning (X-SPUR), an explainable, surprisal-based, protocol-aware unsupervised reasoning framework that instead represents raw packet fields as token sequences, learns benign traffic patterns through causal language modeling, and detects anomalies from per-token cross-entropy surprisal. To incorporate temporal context, we introduce a bimodal fusion architecture that combines payload-token embeddings with interpacket timing through additive fusion and a Hadamard interaction. To handle the heterogeneous score distributions of different protocol families, we further propose a dual top-k% per-protocol Z-score calibration that jointly captures moderately distributed and sparse anomaly signatures. On the TOW-intrusion detection system dataset, X-SPUR achieves an area under the receiver operating characteristic curve of 0.9987. This is marginally higher than the 0.9969 reported for AERO. X-SPUR also eliminates handcrafted feature engineering. We train a separate CarDS model using the same architecture and training hyperparameters. This model retains strong performance on the second automotive Ethernet dataset. Beyond detection, per-token surprisal provides fine-grained explainability by attributing anomaly scores to specific protocol fields, supporting interpretable security analysis in heterogeneous in-vehicle networks.",
-            "image": "/images/publications/XSPUR_IEEE_First_Page.png",
+            "image": "/images/publications/XSPUR_TII_Fig4.png",
             "links": [
                 {
                     "text": "Paper",
@@ -34,7 +54,7 @@
         },
         {
             "year": 2025,
-            "type": "Domestic Conference",
+            "type": "Conference",
             "venue": "Korea Computer Congress (KCC 2025)",
             "venueDetail": "pp. 2344–2346",
             "title": "Development of a Machine Learning-Based Prediction Model for Used Car Listing Prices in Germany",
@@ -50,7 +70,7 @@
             "highlights": [
                 "🏆 Honorable Mention Award"
             ],
-            "tldr": "Predicts final listing prices on German online used-car marketplaces, comparing Multiple Linear Regression and Random Forest Regression under one-hot vs. target encoding — RFR with target encoding performed best (R² 0.892).",
+            "tldr": "Predicts final listing prices on German online used-car marketplaces by comparing Multiple Linear Regression and Random Forest Regression under one-hot and target encoding. Random Forest with target encoding performed best (R² 0.892).",
             "abstract": "In recent years, the demand for used cars has grown significantly due to the rising costs of new vehicles. Accurately predicting fair listing prices for used cars can help alleviate information asymmetry between buyers and sellers, reducing the risk of financial losses during transactions. This study proposes a machine learning-based approach to predict the final listing price of used cars on online platforms. Two regression models—Multiple Linear Regression (MLR) and Random Forest Regression (RFR)—were trained on a dataset collected from German online car marketplaces. To evaluate the impact of encoding strategies on model performance, we applied both one-hot encoding and target encoding to the categorical variables in the dataset. The MLR-based model performed better with one-hot encoding, while the RFR-based model achieved higher accuracy when trained with target-encoded data. These results suggest that target encoding better captures the relationship between categorical variables and price, and RFR is well-suited for modeling the nonlinear characteristics of used car data.",
             "image": "/images/publications/KCC2025_2.jpg",
             "links": [
