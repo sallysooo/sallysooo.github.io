@@ -92,7 +92,7 @@
             },
             "image": "/images/projects/XSPUR_IEEE_Title_Closeup.png",
             "bodyText": "First-author paper published in *IEEE Transactions on Industrial Informatics* (Q1, JIF 9.8).",
-            "detailBody": "📄 **Published in IEEE Transactions on Industrial Informatics (TII)** — Q1, top 6.8% in Automation & Control Systems (JCR), JIF 9.8\n\n**X-SPUR: Explainable Surprisal-Based Protocol-Aware Unsupervised Reasoning for Automotive Ethernet Intrusion Detection**\n\nAn explainable, unsupervised intrusion detection framework for automotive Ethernet networks. Instead of relying on labeled attack data or handcrafted features, X-SPUR represents raw packet fields as token sequences, learns normal network behavior from benign traffic through causal language modeling, and detects anomalies from token-level surprisal. It also provides intrinsic, field-level explanations of anomalous traffic — showing analysts not only *whether* something is unusual, but *where* the anomaly originates.\n\nFirst-author work conducted at SNSec Lab, Sookmyung Women's University, advised by Prof. Seonghoon Jeong.",
+            "detailBody": "📄 **Published in IEEE Transactions on Industrial Informatics (TII)**: Q1, top 6.8% in Automation & Control Systems (JCR), JIF 9.8\n\n**X-SPUR: Explainable Surprisal-Based Protocol-Aware Unsupervised Reasoning for Automotive Ethernet Intrusion Detection**\n\nAn explainable, unsupervised intrusion detection framework for automotive Ethernet networks. Instead of relying on labeled attack data or handcrafted features, X-SPUR represents raw packet fields as token sequences, learns normal network behavior from benign traffic through causal language modeling, and detects anomalies from token-level surprisal. It also provides intrinsic, field-level explanations of anomalous traffic, showing analysts not only *whether* something is unusual but also *where* the anomaly originates.\n\nFirst-author work conducted at SNSec Lab, Sookmyung Women's University, advised by Prof. Seonghoon Jeong.",
             "gallery": [
                 "/images/projects/XSPUR_IEEE_Title_Closeup.png",
                 "/images/projects/x-spur_accepted.jpeg",
@@ -189,10 +189,11 @@
                 "end": "2026-08-21"
             },
             "image": "/images/projects/HEART.png",
-            "bodyText": "BOAZ ADV-project — a harm-ranking approach for cache-pollution bot detection and cache-hit-ratio recovery. Paper under review at IEEE BigData 2026.",
-            "detailBody": "**HEART: Harm Estimation and Ranking of Traffic for Cache-Hit-Ratio Recovery in E-Commerce Logs**\n\nA BOAZ advanced project researching cache-pollution bot detection and cache-hit-ratio recovery in e-commerce web logs, submitted to IEEE BigData 2026 and currently under review.",
+            "bodyText": "BOAZ ADV-project on ranking e-commerce sessions by the cache harm they cause. Accepted as a regular paper at *IEEE BigData 2026* (acceptance rate 19.4%).",
+            "detailBody": "📄 **Accepted as a regular paper at the 2026 IEEE International Conference on Big Data (IEEE BigData 2026)**, acceptance rate 19.4% (203 of 1,046 submissions)\n\n**Beyond Bot Labels: Retrospective Consequence-Grounded Ranking of Attributed Cache Harm in E-Commerce Logs**\n\nA BOAZ advanced project on cache pollution in e-commerce web logs. Instead of classifying which sessions are bots, it ranks sessions by the cache harm they actually cause: a single chronological cache replay charges each shopper's eviction-induced miss to the session that evicted the object, and a behavioral model learns to predict that harm without User-Agent labels. On a 12.7M-request real trace, the top 1% of sessions carry 48.8% of the harm, about half of it from sessions without bot tags. Bypassing the top-ranked sessions recovers 93% of a User-Agent baseline's cache-hit-ratio gain while selecting 47× fewer sessions.\n\nWith Youngwoo Seo (Korea University), advised by Prof. Seonghoon Jeong.",
             "gallery": [
-                "/images/projects/HEART.png"
+                "/images/projects/HEART.png",
+                "/images/publications/BigData2026_Figure1.png"
             ],
             "links": [
                 {
@@ -207,6 +208,7 @@
             "tags": [
                 "Data Mining",
                 "Bot Detection",
+                "Web Caching",
                 "Research"
             ]
         }
